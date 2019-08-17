@@ -1,5 +1,5 @@
 
-This web we focused on leaning how to work with Git and git hub.
+This week we focused on leaning how to work with Git and git hub.
 
 Github is a website which can be used to manage code. 
 Using git we can upload our code, divide our code into different sections and merge code branchs together.
