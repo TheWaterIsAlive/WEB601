@@ -2,8 +2,9 @@ import React from 'react';
 import { NavBar } from './compnents/navbar.jsx';
 import { Header } from './compnents/header.jsx';
 import {Search} from './compnents/search.jsx'
-import {SlideShow} from './compnents/slideshow.jsx'
-import './App.css';
+import {Slideshow} from './compnents/slideshow.jsx'
+import {Footer} from './compnents/footer.jsx'
+//import './App.css';
 
 class App extends React.Component {
   render(){
@@ -12,7 +13,8 @@ class App extends React.Component {
       <Header />
       <NavBar />
       <Search />
-      <SlideShow />
+      <Slideshow />
+      <Footer />
     </div>
   );
 }

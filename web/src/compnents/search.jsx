@@ -5,14 +5,15 @@ export class Search extends React.Component {
       
    
     return  (
-    <div class="topnav">
-     <select>
+    <div class= "padding"><center>
+     <select class="padding">
   <option value="volvo">Volvo</option>
   <option value="saab">Saab</option>
   <option value="mercedes">Mercedes</option>
   <option value="audi">Audi</option>
 </select> 
-    <input type="text" placeholder="Search.." /></div> );
+    <input type="text" placeholder="Search.." class="padding" />
+    </center></div> );
   }
   
   }
