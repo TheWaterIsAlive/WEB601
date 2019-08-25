@@ -5,4 +5,4 @@ and check something that I have changed.
 
 Milestone1 contains the finished code for my website.
 
-The lates marked week contains my most up today blog.
+The lates marked banch contains my most up today blog. Currently ForthWeekPart2 is the most uptoday.
