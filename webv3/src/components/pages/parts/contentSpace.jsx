@@ -1,5 +1,5 @@
 import React from 'react';
-//import {Menuitem} from './menuitem'
+import {Menuitem} from './menuitem'
 export class ContentSpace extends React.Component {
   render() {
 
@@ -7,13 +7,14 @@ export class ContentSpace extends React.Component {
 
     return(
         <div className="properSpacing">
-        <div className="contentFormat">
-      
-
-        </div>
-      
+          <div className="contentFormat">
+           <Menuitem />
+           <Menuitem />
+           <Menuitem />
+          </div>
         
-        <div className="contentFormat"></div>
+          
+          <div className="contentFormat"></div>
         </div>
         );
 

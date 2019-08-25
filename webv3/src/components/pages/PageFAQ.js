@@ -1,8 +1,11 @@
 import React from 'react'
-
+import {FaqPanal} from './parts/faqPanal'
 const PageFAQ = () => {
     return <div>
-        <h1>FAQ</h1>
+
+        <FaqPanal />
+        <FaqPanal />
+        <FaqPanal />
     </div>
     }
     

@@ -121,8 +121,15 @@ h3 {
 
 .lineUp{
 
-  display: inline;
+  display: inline-block;
+
 }
+span.lineUp{
+
+ float: top;
+
+}
+
 
 
 .slideformate{
@@ -167,6 +174,13 @@ ul.content {
   overflow: hidden;
  
 }
+ol.content {
+  list-style-type: none;
+  overflow: hidden;
+  float: left;
+ 
+}
+
 
 li.content {
   float: left;
@@ -177,4 +191,26 @@ li.content {
 margin-top:30px; 
 margin-bottom:30px; 
 
+}
+.menuImg{
+
+width: 100px;
+height: 100px;
+float: right;
+
+}
+.menuItem{
+margin: 2px;
+background-color: #adceed;
+padding: 1em;
+height: 100px;
+
+}
+
+.faq{
+  background-color: aquamarine;
+  width: 80%;
+  text-align: center;
+  margin-left: 10%;
+  margin-bottom: 4%;
 }
