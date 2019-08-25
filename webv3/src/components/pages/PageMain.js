@@ -4,12 +4,13 @@ import {Slideshow} from './parts/slideshow.jsx'
 
 
 const PageMain = () => {
-    return <div>
+    return (
+    <div>
 
         <Search />
         <Slideshow />
        
-        </div>
+    </div>);
 }
 
 export default PageMain

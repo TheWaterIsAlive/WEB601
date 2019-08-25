@@ -2,9 +2,11 @@ import React from 'react'
 import {ContentSpace} from './parts/contentSpace'
 
 const PageMenu = () => {
-    return <div>
+    return (
+    <div>
         <ContentSpace />
-        </div>
+    </div>
+    );
 }
 
 export default PageMenu

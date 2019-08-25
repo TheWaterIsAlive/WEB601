@@ -7,15 +7,15 @@ export class AdvanceSearch extends React.Component {
 
     return(
         <div className="properSpacing">
-        <div className="advanceSearch">
+            <div className="advanceSearch">
 
 
 
-        </div>
+            </div>
 
-        <div className="centered">
-            <button>Advanced Search</button>
-        </div>
+            <div className="centered">
+                <button>Advanced Search</button>
+            </div>
 
         </div>
 

@@ -4,14 +4,14 @@ import {AdvanceSearch} from './parts/advanceSearch'
 import {ContentSpace} from './parts/contentSpace'
 
 const PageSearch = () => {
-    return <div>
+    return (
+    <div>
         <Search />
         <AdvanceSearch />
         <div>
-        <ContentSpace />
-        
+            <ContentSpace />
         </div>
-        </div>
+    </div>);
 }
 
 export default PageSearch

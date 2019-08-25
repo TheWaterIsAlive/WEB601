@@ -32,7 +32,7 @@ export const Slideshow = () => {
             <div style={{'backgroundImage': `url(${slideImages[1]})`}}>
             
             </div>
-            <p>Sasha tool a bite of the omlette, cheesy with dark leafy greens. She smiled, "Tamal, that's so good, what's the green stuff?"
+              <p>Sasha tool a bite of the omlette, cheesy with dark leafy greens. She smiled, "Tamal, that's so good, what's the green stuff?"
 With a boyish grin he raised his brows, opening up his eyes, "Stinging nettle, chives and dandelion leaves."
 Sasha paused as if her thoughts had stopped entirely, "Holy. That tastes good."
 He gave a shrug, the one he always gave when he was proud of himself but tickled with his own shyness. "Chuck out the stems from the dandelions, boil the rest together for a few minutes, cold water, squeeze, chop. That's it. Sting all gone. Eat what wants to grow, easy."</p> 

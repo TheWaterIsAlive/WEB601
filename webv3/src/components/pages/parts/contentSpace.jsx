@@ -14,7 +14,9 @@ export class ContentSpace extends React.Component {
           </div>
         
           
-          <div className="contentFormat"></div>
+          <div className="contentFormat">
+            
+          </div>
         </div>
         );
 
