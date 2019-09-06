@@ -30,3 +30,35 @@ Another example is CSS in javascript which lets us write CSS in javascript. This
 to the project, but it allows for a large amount of work to be preformed at once.
 
 
+
+This week we started with git class room. During this we used the new tool to learn about the React life cycle.
+
+The react life cycle contains 5 different mainly used methods.
+
+Constructor
+render
+componentDidMount
+componentWillumount
+componentDidUpdate
+
+
+There are more lifecycles that this exept these are the only one which are commonly used.
+
+Each component runs at a different type during the lifecylce of a compent.
+
+Constructor are ran before the compent is mounted and lets the user set up things such as the state of objects and eventbinds.
+Constructor are limited as too what they can do as there code takes place before the component is mount and therefore doesn't
+have a state yet.
+
+Render is the only composirey part of a class. Render is the main part of the code and render what the compent is ment to render.
+Render can not be used to diffectly influent the state of the compent or to directly interact with the browser.
+
+componentDidMount will be ran directly after the code was mounted and therefore can be used to set up things like subscriptions.
+
+compoentDidUpdate is ran when the compent is updated in someway. By using the this we can invoke code after a change is made allowing 
+us to be able to re-render the compent after anything is changed.
+
+commpentWillUnMount lets us run any code that is needed before the compented is umounted and distroyed.
+
+Knowledge of the life cycle react allows us to fully take advantage of how react compoents rendercode allowing us to be able to 
+have certain bits of code rendered at certain times.
