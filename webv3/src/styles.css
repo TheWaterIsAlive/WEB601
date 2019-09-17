@@ -13,37 +13,39 @@ code {
 }
 
 
-.footer{
+.footer {
   background-color: #111;
   height: 100px;
   width: 100%;
   margin-bottom: 0px;
 }
 
-.navBar{
+.navBar {
   background-color: tan;
- 
-
-}
-.header{
-
-height: 300px;
-width: 100%;
 
 
 }
 
+.header {
 
-h1.headerText{
+  height: 300px;
+  width: 100%;
+
+
+}
+
+
+h1.headerText {
 
   position: absolute;
   left: 33%;
   top: 19%;
 
 }
-.navBack{
+
+.navBack {
   background-color: aqua;
- 
+
 
 
 }
@@ -77,12 +79,14 @@ li a:hover {
 
 .slide-container {
   width: 70%;
-  margin: auto; }
+  margin: auto;
+}
 
 h3 {
-  text-align: center; }
+  text-align: center;
+}
 
-.each-slide > div {
+.each-slide>div {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -119,23 +123,24 @@ h3 {
   background: #adceed;
 }
 
-.lineUp{
+.lineUp {
 
   display: inline-block;
 
 }
-span.lineUp{
 
- float: top;
+span.lineUp {
+
+  float: top;
 
 }
 
 
 
-.slideformate{
+.slideformate {
 
 
-width: 600px;
+  width: 600px;
 
 
 }
@@ -149,16 +154,16 @@ width: 600px;
 
 }
 
-.centered{
+.centered {
 
-margin-left: 45%;
+  margin-left: 45%;
 
 
 }
 
 
 
-.contentFormat{
+.contentFormat {
   display: inline-block;
   width: 35%;
   height: 600px;
@@ -172,13 +177,14 @@ margin-left: 45%;
 ul.content {
   list-style-type: none;
   overflow: hidden;
- 
+
 }
+
 ol.content {
   list-style-type: none;
   overflow: hidden;
   float: left;
- 
+
 }
 
 
@@ -186,28 +192,30 @@ li.content {
   float: left;
 }
 
-.properSpacing{
+.properSpacing {
 
-margin-top:30px; 
-margin-bottom:30px; 
-
-}
-.menuImg{
-
-width: 100px;
-height: 100px;
-float: right;
-
-}
-.menuItem{
-margin: 2px;
-background-color: #adceed;
-padding: 1em;
-height: 100px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 
 }
 
-.faq{
+.menuImg {
+
+  width: 100px;
+  height: 100px;
+  float: right;
+
+}
+
+.menuItem {
+  margin: 2px;
+  background-color: #adceed;
+  padding: 1em;
+  height: 100px;
+
+}
+
+.faq {
   background-color: aquamarine;
   width: 80%;
   text-align: center;
