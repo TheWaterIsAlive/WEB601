@@ -8,7 +8,7 @@ export const FaqPanal = () =>{
 
 
 return(
-<div class="faq">
+<div className="faq">
     <div className="faqTitle">
         <h2 className="faqTitle"> Is this site free?</h2>
     </div>
