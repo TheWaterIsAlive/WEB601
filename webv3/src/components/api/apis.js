@@ -2,13 +2,11 @@ const express = require('express')
 const app = express()
 const port = 3000
 const bodyParser = require('body-parser');
-const config = require('./config')
+//const config = require('./config')
 //const mysql = require('mysql')
 
 
 const knex = require('knex')({
-
-
 
     client:'mysql',
     connection:{
@@ -39,7 +37,9 @@ app.use(bodyParser.json({
 app.get('/bussnesses', async(req, res) =>{
     try {
         let bussness = await knex('bussnesses');
-        res.json(bussness)
+        res.json(
+            bussness
+            )
     }
     catch(e){
         console.log(e);

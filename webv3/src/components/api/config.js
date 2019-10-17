@@ -1,24 +1,24 @@
-const knex = require('knex')({
+const APIServerPort = 4200
 
+const database ={
 
-
-    client:'mysql',
-    connection:{
-    host:'127.0.0.1',
+  
+    host:'localhost',
+    port: 3306,
     user:'root',
     password:'Muchduck203',
-    database:'nelsonfoods'
+    database:'nelsonfoods',
+    insecureAuth: true
     
-    }
     
     
-    });
+    
+    };
 
 
 module.exports = {
 
-    knex
-/*database,
-APIServerPort
-*/
+    database,
+    APIServerPort
+
 }
