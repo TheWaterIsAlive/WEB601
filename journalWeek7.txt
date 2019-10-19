@@ -1,0 +1,64 @@
+During this lesion we covered the differents between javascript classes, funtions and propts. These are called components.
+
+Funtions are basic they allow for code to be quickly ran and don't clutter your code like a class will. Funtions are consider stateless as they
+only have the ability to run their code and don't remember any of the other funtions.
+Classes are more complicated than Funtions have additionl features such as storing varables. As they store varable they are considered stateful
+Although some people might recommend not using classes out teach does as it is extremely useful to be able to take advantages of classes
+Propts are components which have the ability to store data and that is it. They can be passed to classes and used to more around data.
+
+Examples:
+Funtion: preform a spicific equation.
+Classes: preform an equation basied on it's state
+Propts: pass a value into classes to be added.
+
+
+We covered how to take advantage of react parent child relationships. This was something that I took advantage of for milestone one.
+A react componed can be placed within another component and then that component can be called from the root.
+This allows us to be able to render multiple components at the sametime. I currently am not sure how to properly load a component 
+after a piece of child code. For example I would like to have my header and footer on every page and then content inbetween but I 
+don't know how to load the footer with out loading it as a child as well. I will need to look into this in the future, I believe that
+it has some relation to boiler plates so that might be a place to look into.
+
+We covered differnet types of styling. Inline styles are bad and I will not consider using them. I am currently using a css file
+but there is an additional type of file which I might want to look into doing. Style components allow us to download style tempaltes
+and applie them to each components, this is simlar to an inline style but doesn't have a lot of the downsides to inline styles.
+
+I might look into this as I am not good at web designs so this could help me make my website more polished looking. It also prevents
+me from forgeting an interferrinh tag which could coarse issues, which is a common problem I have.
+
+Another example is CSS in javascript which lets us write CSS in javascript. This isn't popular as it can add a large amount of code
+to the project, but it allows for a large amount of work to be preformed at once.
+
+
+
+This week we started with git class room. During this we used the new tool to learn about the React life cycle.
+
+The react life cycle contains 5 different mainly used methods.
+
+Constructor
+render
+componentDidMount
+componentWillumount
+componentDidUpdate
+
+
+There are more lifecycles that this exept these are the only one which are commonly used.
+
+Each component runs at a different type during the lifecylce of a compent.
+
+Constructor are ran before the compent is mounted and lets the user set up things such as the state of objects and eventbinds.
+Constructor are limited as too what they can do as there code takes place before the component is mount and therefore doesn't
+have a state yet.
+
+Render is the only composirey part of a class. Render is the main part of the code and render what the compent is ment to render.
+Render can not be used to diffectly influent the state of the compent or to directly interact with the browser.
+
+componentDidMount will be ran directly after the code was mounted and therefore can be used to set up things like subscriptions.
+
+compoentDidUpdate is ran when the compent is updated in someway. By using the this we can invoke code after a change is made allowing 
+us to be able to re-render the compent after anything is changed.
+
+commpentWillUnMount lets us run any code that is needed before the compented is umounted and distroyed.
+
+Knowledge of the life cycle react allows us to fully take advantage of how react compoents rendercode allowing us to be able to 
+have certain bits of code rendered at certain times.

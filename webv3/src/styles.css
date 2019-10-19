@@ -1,0 +1,216 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+
+.footer{
+  background-color: #111;
+  height: 100px;
+  width: 100%;
+  margin-bottom: 0px;
+}
+
+.navBar{
+  background-color: tan;
+ 
+
+}
+.header{
+
+height: 300px;
+width: 100%;
+
+
+}
+
+
+h1.headerText{
+
+  position: absolute;
+  left: 33%;
+  top: 19%;
+
+}
+.navBack{
+  background-color: aqua;
+ 
+
+
+}
+
+
+ul.navArea {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li.navArea {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+
+.slide-container {
+  width: 70%;
+  margin: auto; }
+
+h3 {
+  text-align: center; }
+
+.each-slide > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: 300px;
+}
+
+.each-slide span {
+  padding: 20px;
+  font-size: 20px;
+  background: #efefef;
+  text-align: center;
+}
+
+.each-fade {
+  display: flex;
+}
+
+.each-fade .image-container {
+  width: 75%;
+  overflow: hidden;
+}
+
+.each-fade .image-container img {
+  width: 100%;
+}
+
+.each-fade h2 {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background: #adceed;
+}
+
+.lineUp{
+
+  display: inline-block;
+
+}
+span.lineUp{
+
+ float: top;
+
+}
+
+
+
+.slideformate{
+
+
+width: 600px;
+
+
+}
+
+.advanceSearch {
+
+  width: 40%;
+  height: 250px;
+  background-color: #333;
+  margin-left: 30%;
+
+}
+
+.centered{
+
+margin-left: 45%;
+
+
+}
+
+
+
+.contentFormat{
+  display: inline-block;
+  width: 35%;
+  height: 600px;
+  background-color: #333;
+  margin-left: 10%;
+
+
+
+}
+
+ul.content {
+  list-style-type: none;
+  overflow: hidden;
+ 
+}
+ol.content {
+  list-style-type: none;
+  overflow: hidden;
+  float: left;
+ 
+}
+
+
+li.content {
+  float: left;
+}
+
+.properSpacing{
+
+margin-top:30px; 
+margin-bottom:30px; 
+
+}
+.menuImg{
+
+width: 100px;
+height: 100px;
+float: right;
+
+}
+.menuItem{
+margin: 2px;
+background-color: #adceed;
+padding: 1em;
+height: 100px;
+
+}
+
+.faq{
+  background-color: aquamarine;
+  width: 80%;
+  text-align: center;
+  margin-left: 10%;
+  margin-bottom: 4%;
+}
