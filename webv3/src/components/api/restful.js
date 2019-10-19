@@ -50,10 +50,10 @@ router.delete('/bussnesses/:name', routes.listBussness.deleteBussnessKnex);
 
 
 router.get('/users', routes.listUser.getAllUserKnex);
-router.get('/users/:id', routes.listUser.getSingleUserKnex);
+router.get('/users/:name', routes.listUser.getSingleUserKnex);
 router.post('/users', jsonParser, routes.listUser.postUserKnex);
-router.put('/users/:id', jsonParser, routes.listUser.postUserKnex);
-router.delete('/users/:id', routes.listUser.deleteUserKnex);
+router.put('/users/:name', jsonParser, routes.listUser.postUserKnex);
+router.delete('/users/:name', routes.listUser.deleteUserKnex);
 
 /*
 router.get('/calander', routes.listCalander.getAllCalanderKnex);
