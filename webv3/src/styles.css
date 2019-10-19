@@ -14,10 +14,12 @@ code {
 
 
 .footer {
+  clear: both;
   background-color: #111;
   height: 100px;
   width: 100%;
   margin-bottom: 0px;
+  
 }
 
 .navBar {
@@ -165,7 +167,7 @@ span.lineUp {
 
 .contentFormat {
   display: inline-block;
-  width: 35%;
+  width: 33%;
   height: 600px;
   background-color: #333;
   margin-left: 10%;
@@ -173,6 +175,12 @@ span.lineUp {
 
 
 }
+.contentFormatLeft{
+
+float: left;
+
+}
+
 
 ul.content {
   list-style-type: none;
@@ -221,4 +229,14 @@ li.content {
   text-align: center;
   margin-left: 10%;
   margin-bottom: 4%;
+}
+
+.menuSnapIn{
+  height: auto;
+  width: auto;
+  background-color: #adceed;
+  text-align: center;
+  padding: 2% 3%;
+
+
 }
