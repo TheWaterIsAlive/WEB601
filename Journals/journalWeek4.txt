@@ -1,0 +1,61 @@
+I have decided on my project. For this class I will make a genirect product web site which allows small businesses to advitise there
+products. The website will allow people who don't have have websites of their own can eaierly advitise online as well as people who
+want to find the product they want.
+
+
+We started this class with the highlevel discription of a basic discription of the product. We went over a basic diagram and with 
+basic terminoligy for the use of a web app. We have cover this in a previous leason by this discription made it made more scense to
+me. Being able to discuse a project in the most basic terms is important when it comes to talking to clients as client might get lost
+if they don't understand what you are trying to communicate. This is an important skill for me to learn as I struggle to clearly 
+explain my point and to give the necisery details.
+
+
+I struggling to understand what express.js is. I believe that express is a code liberay built on node.js, it's most important feature
+is how it is customisable. Node.js is a liberary which allow for webcommunications. The node.js is allows for connections between servers
+and other computers by creating conections called sockets, which is a cocept that I am struggling to understand but I think that this
+might be a little advance for where I currenetly am at. How I understand is that Javascript can communicate with the hardware of a server
+so node.js allows for translation between the two.
+
+Note: I called node,js and express.js liberaies they are actually frameworks.
+
+While using code libariaries it is important to make sure that they are up to date before they become an important part of you app.
+This can be done by using github to check how active the repository is when, howmany issue their are and when it was last updated.
+The reason only using currently manatained code is important is that if the code is not being mantained error and issues will occure
+and wont be resolved. It is also important to find work arounds for issues as the people updating the repository might not resolve issues
+straight away.
+
+
+I don't understand this so this will need to be re-writting{ *
+
+Just to some techniqual issues I was late to class. I entered class and was encountered by the discussion of using express.js to code
+we were going over the next() command which lets a program move onto the next peice of code which is useful after something like
+an if statement. We also covered use, req and res which is what I missed so I will need to figure out what this mean at someother time.
+
+How I believe that this works is that when the code needs to take a responce from the internet we use req to get the resault and
+when we want to respond to it we use res.
+
+We also covered the term middle where which is used to discribe the the action which take place between the requests of the user and
+the responces of the system, I think I'm not really sure. 
+
+The next funtion moves to the next action amoung the middleare.
+
+We also talked about app.use and app.get which are used to load the funtions such as req and res from express.js.
+
+The different from app.use and app.get is that the app.use doesn't need to querry/recieve information. Where app.get go and retrieves
+information.
+
+
+We also covered router which I do not understand but they seem important.
+
+I think that this will make more sense once I try and use it, I should look up some tutorial to try it out.
+
+app.listin allows us to specifie what to listen for to run the code. app.listen opens a port allowing the use to tap into it to access
+the code which has been set up for the user to run.
+
+Remainber:
+Require statement
+middleare
+route
+
+}
+
