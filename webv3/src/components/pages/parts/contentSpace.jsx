@@ -1,5 +1,7 @@
 import React from 'react';
 import {Menuitem} from './menuitem'
+import {BuisnessDetail} from './buisnessDetails'
+
 export class ContentSpace extends React.Component {
   render() {
 
@@ -14,8 +16,8 @@ export class ContentSpace extends React.Component {
           </div>
         
           
-          <div className="contentFormat">
-            
+          <div className="contentFormat contentFormatLeft">
+            <BuisnessDetail />
           </div>
         </div>
         );

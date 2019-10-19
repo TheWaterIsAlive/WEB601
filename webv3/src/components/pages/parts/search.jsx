@@ -5,15 +5,15 @@ export class Search extends React.Component {
       
    
     return  (
-    <div class= "padding properSpacing">
+    <div className= "padding properSpacing">
       <center>
-        <select class="padding">
+        <select className="padding">
           <option value="name">Name</option>
           <option value="location">Location</option>
           <option value="Price">Price</option>
 
         </select> 
-        <input type="text" placeholder="Search.." class="padding" />
+        <input type="text" placeholder="Search.." className="padding" />
       </center>
     </div> );
   }

@@ -5,8 +5,8 @@ export class Footer extends React.Component {
   render() {
   
     return (
-     <div class="footer">
-        <p class="footer"></p>
+     <div className="footer">
+        <p className="footer"></p>
     </div>
     );
   }
