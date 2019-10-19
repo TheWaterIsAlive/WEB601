@@ -1,0 +1,23 @@
+For the first class of this week were disscused the differen types of frame works and markup langauges their are and how
+popular they are. This is both interesting and important as i might want to pick langauges which are popular or in high demand.
+
+We also disscused basic JS funtions, they are simlar to other programming langauges, just like other langauges JS has it's own differences
+for example number is less regid than in other langauges. This sort of thing is important as all langauges has their own syntac and
+understanding that is key to understanding the langauges.
+
+Were also covered equal and not equal statements in JS we use === or !== for java script which is different from other programing
+langauges which just use == and !=.
+
+
+For the second leson we talked about the differences between if statements and switch statements.
+
+The operator || is JS verson of or which is usefull to know as I have a tendance to create large complex and or statments.
+Is is important to combin statements like this or you would need to create many nested statements which is one of the first things
+I learnt I wasn't meant to do when starting this corse.
+
+I don't realy understand error funtions but I will look into it as it seems important to be able to prevent errors in my code so I
+Should look into it latter.
+
+
+Funtions in JS are very simlar to what I am use to and are called simlarly to MySQL funtions. I should look for some differences 
+SO That I don't make error or increct assumtions.

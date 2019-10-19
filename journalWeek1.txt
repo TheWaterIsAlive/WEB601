@@ -1,1 +1,39 @@
 
+This week we focused on leaning how to work with Git and git hub.
+
+Github is a website which can be used to manage code. 
+Using git we can upload our code, divide our code into different sections and merge code branchs together.
+Once we are finished working on our code we can commit and push it to github which stores the code and allows other github users
+to see and possibly contribute to the code.
+
+Github hub also funtions as a sort of social network for programers. Many programers use github to network with others in the 
+industry or as a CV for job interviews. Github hub tracks how much a user interacts with the site/ how much they contribute to 
+repostories. This activity tracking allow potential employers to see how the user works. Activity tracking also allows users to
+form bounds with each other letting them effectively social network.
+
+Git and by extention github let users manage there code though branching. A branch is a copy of a set of code which can be
+work on without effecting the main piece of code. Branchs can be created form a branch and more than one branch can be created
+at a time. 
+
+Branching allows multiple programers to all work on a piece of code at the same time. Multiple people can each have their
+own branchs allowing them to not have to work about other users overriding the work they have completed.
+
+This journal is late as I made a mistake when first trying to commit it and manage to select my documents folder as both the source and destanation 
+of my commits this resault in Visual studio code and git breaking and me having to install a third party software to uninstall any
+residual files. 
+
+During the first week of this class we learnt about the various git commands which we will need to complete the git/github porsion of this assignment.
+The first step to using git for verson controll is to add cridentails.
+git config --global user.email "hello@example.com" this is an example of the command to do this.
+In my case I had to do this twice once for username and once for email.
+The next step is to create and naviagate to a folder which can be used as a repository.
+Next we have to use the 'git clone "URL from git hub"' command to get the files from github.
+After the changes were complete we needed to create a new branch which 'git checkout -b "Name Of New branch"'.
+After this we had to use the 'git add "fileName.extention"' to select the file(s) we wanted to commit.
+Next we used the 'git commit -m "Message"' TO Commit the the changes and add a comment to the commit.
+Finally we used 'git push origin "Target Branch"' to send the changes to github.
+
+An alternate thing we learnt this week is how to merge branchs together. 
+The process work by creating multipe branchs navagating to one and them using 'git merge "other branch name"' to merge the two.
+This funtion allows us to be able to work on small parts of a project indevidually and then have them all fuse together once they
+are finished.
