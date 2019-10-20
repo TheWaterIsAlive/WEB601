@@ -4,7 +4,7 @@ function getAllMenuItemKnex(req, res) {
         knex
     } = req.app.locals
     knex
-        .select('menuID', 'itemName', 'itemDescription', 'itemCost', 'energy', 'protein', 'fat', 'carbohydrates', 'sugar', 'dietaryFibre', 'sodium', 'vegaterian', 'vegan', 'allergenCondentions')
+        .select('itemID', 'menuID', 'itemName', 'itemDescription', 'itemCost', 'energy', 'protein', 'fat', 'carbohydrates', 'sugar', 'dietaryFibre', 'sodium', 'allergenCondentions')
         .from('menuItem')
      
         .then(data => res.status(200).json(data))
@@ -22,7 +22,7 @@ function getSingleMenuItemKnex(req, res) {
         id
     } = req.params
     knex
-    .select('menuID', 'itemName', 'itemDescription', 'itemCost', 'energy', 'protein', 'fat', 'carbohydrates', 'sugar', 'dietaryFibre', 'sodium', 'vegaterian', 'vegan', 'allergenCondentions')
+    .select('menuID', 'itemName', 'itemDescription', 'itemCost', 'energy', 'protein', 'fat', 'carbohydrates', 'sugar', 'dietaryFibre', 'sodium', 'allergenCondentions')
     .from('menuItem')
         .where({
             itemID: `${id}`

@@ -180,6 +180,13 @@ span.lineUp {
 float: left;
 
 }
+.contentFormatRight{
+
+  float: right;
+  
+  }
+
+
 
 
 ul.content {
@@ -218,7 +225,7 @@ li.content {
 .menuItem {
   margin: 2px;
   background-color: #adceed;
-  padding: 1em;
+  padding: 2% 3%;
   height: 100px;
 
 }
@@ -239,4 +246,12 @@ li.content {
   padding: 2% 3%;
 
 
+}
+
+menuTable{
+
+width: 33%;
+
+
+  
 }

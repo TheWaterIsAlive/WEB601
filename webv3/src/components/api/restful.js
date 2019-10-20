@@ -3,6 +3,8 @@ const app = express()
 const router = express.Router()
 const config = require('./config')
 const mysql = require('mysql')
+app.use(express.static('src'));
+var cors = require('cors');
 const bodyParser = require('body-parser');
 const jsonParser = bodyParser.json();
 const middleware = require('./middleware');
@@ -88,7 +90,7 @@ next();
 
 
 
-app.use('/api', router);
+app.use('/api', cors(), router);
 
     app.listen(config.APIServerPort, () => {
         console.log(`Server started on port ${config.APIServerPort}`);
