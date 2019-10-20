@@ -15,3 +15,6 @@ This is a repository for my WEB601 work.
 For my journals the latest branch should contain all of my updated journals, older branches contain past journals just encase I want to go back 
 and check something that I have changed.
 
+Formate is the lates branch for milestone 2.
+Too run the app open a ternial navagate to webv3/src/components/api and then run nodemon restfull.js.
+In a seperate terminal navagte to webv3 and run npm start.
