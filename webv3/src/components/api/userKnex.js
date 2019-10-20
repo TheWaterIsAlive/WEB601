@@ -1,43 +1,65 @@
+
+//Function 1 Gets a List of all of the records in the usertable
+//Function 2 Get a single record basied on a primary key
+//Function 3 Create a new record and inforces mandatory fields
+//Function 4 Updates a record based on a Username
+//Function 5 Deletes a record based on a USername
+
+
+
+
+//List users for administration purposes
 function getAllUserKnex(req, res) {
-  
+
     const {
         knex
     } = req.app.locals
     knex
         .select('username', 'accountPassword', 'email', 'bussnessName')
         .from('users')
-     
+
+     /* Provides feedback on the resaults of 
+        the queary the 200 messages are a sign of success 
+        and the json file is what stores the information 
+        which the is displayied to the user */
         .then(data => res.status(200).json(data))
         .catch(error => res.status(500).json(error))
-}
+}       /*The 500 messages are error messages and this 
+        provides an error message when it is displayed */
+
 
 
 
 function getSingleUserKnex(req, res) {
-  
+
     const {
         knex
     } = req.app.locals
-    const{
+    const {
         name
     } = req.params
     knex
-    .select('username', 'accountPassword', 'email', 'bussnessName')
-    .from('users')
+        .select('username', 'accountPassword', 'email', 'bussnessName')
+        .from('users')
         .where({
-            username: `${name}`
+            username: `${name}`  //This is the imput which lets the database find the specifid record is managed
         })
-     
+
+        /* Provides feedback on the resaults of 
+        the queary the 200 messages are a sign of success 
+        and the json file is what stores the information 
+        which the is displayied to the user */
         .then(data => res.status(200).json(data))
         .catch(error => res.status(500).json(error))
-}
+}       /*The 500 messages are error messages and this 
+        provides an error message when it is displayed */
 
 
 function postUserKnex(req, res) {
     const {
         knex
     } = req.app.locals
-    
+
     const payload = req.body
 
     const mandatoryColumns = ['username', 'accountPassword', 'email']
@@ -46,10 +68,11 @@ function postUserKnex(req, res) {
     if (mandatoryColumnsExists) {
         knex('users')
             .insert(payload)
-            .then(response =>{
-                if (response){
-                     res.status(201).json('User item record created')
-                    }})
+            .then(response => {
+                if (response) {
+                    res.status(201).json('User item record created')
+                }
+            })
             .catch(error => res.status(500).json(error))
 
     } else {
@@ -102,7 +125,7 @@ function deleteUserKnex(req, res) {
 }
 
 
-module.exports = {
+module.exports = {  //This are allows for the funtions of this file to be exported and use in other files.
     getAllUserKnex,
     getSingleUserKnex,
     postUserKnex,

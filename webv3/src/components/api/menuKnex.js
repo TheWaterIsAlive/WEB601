@@ -1,43 +1,46 @@
+//This class is not commonly used
+
+
 function getAllMenuKnex(req, res) {
-  
+
     const {
         knex
     } = req.app.locals
     knex
         .select('bussnessName', 'address')
         .from('bussnesses')
-     
+
         .then(data => res.status(200).json(data))
         .catch(error => res.status(500).json(error))
 }
 
 
-
+//This funtion is occasionally used to find the relationship between menu items and bussnesses
 function getSingleMenuKnex(req, res) {
-  
+
     const {
         knex
     } = req.app.locals
-    const{
+    const {
         id
     } = req.params
     knex
         .select('bussnessName', 'address')
         .from('bussnesses')
         .where({
-           id: 'bussnessName'
+            id: 'bussnessName'
         })
-     
+
         .then(data => res.status(200).json(data))
         .catch(error => res.status(500).json(error))
 }
 
-
+//Used mostly when a new bussness is created
 function postMenuKnex(req, res) {
     const {
         knex
     } = req.app.locals
-    
+
     const payload = req.body
 
     const mandatoryColumns = ['bussnessName', 'address']
@@ -55,6 +58,7 @@ function postMenuKnex(req, res) {
 }
 
 
+// Only used to completely replace a menu
 function putMenuKnex(req, res) {
     const {
         knex

@@ -5,7 +5,7 @@ const listUser = require('./userKnex')
 const listMenu = require('./menuKnex')
 const listMenuItem = require('./menuItemKnex')
 //const listDefault = require('./menuDefaultsKnex')
-
+// This fill manages the relationships between the restfull.js routes and the fills which contain the knex 
 
 module.exports = {
 

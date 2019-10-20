@@ -1,23 +1,11 @@
-// function checkNAME(req, res, next) {
-//     /* Creating a variable id to capture the id itself and we are going check 
-//     if id is not an integer then we are going to do something */
-//     const name = +req.params.name
-//     if (String.isString(name)) {
-//         next() // Next function will allow the next middleware function to execute. 
-//     } else {
-//         return res.status(400).json('Name must be an Word');
-//     }
-// }
-/* We are going to create a middleware to check the requested ID if it is integer or not */
-
+//Makes sure that an idea is a number
 function checkID(req, res, next) {
-    /* Creating a variable id to capture the id itself and we are going check 
-    if id is not an integer then we are going to do something */
-    const id = +req.params.id
-    if (Number.isInteger(id)) {
-        next() // Next function will allow the next middleware function to execute. 
+
+    const id = +req.params.id //gets imput from parent
+    if (Number.isInteger(id)) { //Check if input is a number
+        next() //If it is move to next middleware
     } else {
-        return res.status(400).json('ID must be an integer');
+        return res.status(400).json('ID must be an integer');//Shows a error message and end the commication
     }
 }
 
@@ -25,6 +13,6 @@ function checkID(req, res, next) {
 
 
 module.exports = {
-    checkID
+    checkID //export middleware so they can be used
 
 }

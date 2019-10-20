@@ -19,7 +19,7 @@ code {
   height: 100px;
   width: 100%;
   margin-bottom: 0px;
-  
+
 }
 
 .navBar {
@@ -149,10 +149,10 @@ span.lineUp {
 
 .advanceSearch {
 
- 
+
   height: 250px;
   background-color: #333;
-  
+
 
 }
 
@@ -168,23 +168,25 @@ span.lineUp {
 .contentFormat {
   display: inline-block;
   width: 33%;
-  height: 600px;
+  height: auto;
   background-color: #333;
   margin-left: 10%;
 
 
 
 }
-.contentFormatLeft{
 
-float: left;
+.contentFormatLeft {
+
+  float: left;
 
 }
-.contentFormatRight{
+
+.contentFormatRight {
 
   float: right;
-  
-  }
+
+}
 
 
 
@@ -226,7 +228,7 @@ li.content {
   margin: 2px;
   background-color: #adceed;
   padding: 2% 3%;
-  height: 100px;
+  height: auto;
 
 }
 
@@ -238,7 +240,7 @@ li.content {
   margin-bottom: 4%;
 }
 
-.menuSnapIn{
+.menuSnapIn {
   height: auto;
   width: auto;
   background-color: #adceed;
@@ -248,12 +250,10 @@ li.content {
 
 }
 
-.menuTable{
+.menuTable {
 
-width: 33%;
+  width: 33%;
 
 
-  
+
 }
-
-

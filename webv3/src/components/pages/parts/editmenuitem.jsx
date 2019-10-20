@@ -1,22 +1,45 @@
 import React from 'react';
 
-export class AddMenuItem extends React.Component {
+export class EditMenuItem extends React.Component {
 
 
 
     constructor() {
         super();
-        this.handleSubmit = this.handleSubmit.bind(this); //Binds button press so that the front knows what is going 
+        this.handleSubmit = this.handleSubmit.bind(this);
+        this.state({
+            isFetching: false,
+            selectedID: "",
+            items: []
+        })
+    }
+    // Gets a single item from the database menu items
+    GetAMenuItem() { 
+        fetch('http://localhost:4200/api/menuItem/' + selectedID)
+            .then(res => res.json())
+            .then(data => {
+                if (data.cod === '404') {
+                    this.setState({
+                        isFetching: false,//States to show that the item has not be retreieved
+                    })
+                } else {
+                    this.setState({
+                        isFetching: true,//States to show that the item has not be retreieved
+                        items: data,
+                    });
+                }
+            })
+            .catch(err => {
+                console.log(err);
+            })
     }
 
-
-    handleSubmit(event) {// Sets up the ability to set up there  submint button events
+    handleSubmit(event) {
         event.preventDefault();
-
-        const confirmable = window.fetch('http://localhost:4200/api/menuItem/', { //A promise which trys and gets to the database through routes
-            method: 'post', //The type of action this event preforms
+        fetch('http://localhost:4200/api/menuItem/' + selectedID, {
+            method: 'put',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ //creates a list of string so the infomration can be later displayed
+            body: JSON.stringify({
                 "menuID": this.menuID.value,
                 "itemName": this.itemName.value,
                 "itemDescription": this.itemDescription.value,
@@ -29,27 +52,32 @@ export class AddMenuItem extends React.Component {
                 "dietaryFibre": this.dietaryFibre.value,
                 "sodium": this.sodium.value,
                 "allergenCondentions": this.allergenCondentions.value
-            }) // The aboves use this and value as that is what this code is refering too
-
-        }); confirmable.then((response) => response.json()).then((json) => {
-            window.location.reload(); //Completes the promies and reloads the page after the connection is complete
+            })
         });
 
-
-
-        console.log("Menu Item added"); //Logs some infomraton as a security messer
+        console.log("Menu Item Edited");
     }
+    selectedID() {
 
+        this.setState({
+            selectedID: selectedID.value
+        }) //Sets the state of the item we was to get cut
+
+    }
 
     render() {
 
 
         return (
             <div className="menuSnapIn">
-                 {/* a class made to make UI elements reuseable */}
 
 
-                <form onSubmit={this.handleSubmit}> 
+                <form onSubmit={this.handleSubmit}>
+                    <label>
+                        Select ID:
+                    <input onChange={this.selectItem()} ref={(ref) => { this.selectID = ref }} type="text" id="selectID" name="selectID" autocomplete="off" />
+                    </label><br></br>
+                    <button onclick={loadData()}>Select</button>
                     <label>
                         Menu ID:
                     <input ref={(ref) => { this.menuID = ref }} type="text" id="menuID" name="menuID" autocomplete="off" />
@@ -99,8 +127,7 @@ export class AddMenuItem extends React.Component {
                         Allergen Condentions:
                     <input ref={(ref) => { this.allergenCondentions = ref }} type="text" id="allergenCondentions" name="allergenCondentions" autocomplete="off" />
                     </label><br></br>
-                    <input type="submit" id="Submit" /> 
-                    {/* Table which contains feild fpr various different fields  */}
+                    <input type="submit" id="Submit" />
                 </form>
             </div>
 
