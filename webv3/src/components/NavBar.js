@@ -1,8 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+// import { Nav, NavBar } from 'react-bootstrap';
+
+
 
 const NavBar = () => {
     return (
+       
         <div className="ui  pointing right menu" style={{backgroundColor: 'lightBlue'}}>
             <ul className="navArea">
                 <li className="navArea">
@@ -36,6 +40,7 @@ const NavBar = () => {
                     </li>
             </ul>
         </div>
+       
     )
 }
 
