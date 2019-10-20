@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Container, Row, Col } from 'react-bootstrap';
 
 
 export class Menuitem extends React.Component {
@@ -40,33 +40,32 @@ export class Menuitem extends React.Component {
     render() {
         
              return ( 
-            
-                <table className="menuTable menuItem">
-                  <tr>
-                    <th>Menu ID</th>
-                    <th>Name</th>
-                    <th>Description</th>
-                    <th>Cost</th>
+            <Container className="menuItem">
+                
+                  <Row>
+                    <Col>Menu ID</Col>
+                    <Col>Name</Col>
+                    <Col>Description</Col>
+                    <Col>Cost</Col>
+                    </Row>
 
-
-                  </tr>
-              {this.state.items.map((menuItem) => (
-               
-                   <tr  key={menuItem.itemID}>
-                    
                   
-                    <td>{menuItem.menuID}</td>
-                    <td>{menuItem.itemName}</td>
+              {this.state.items.map((menuItem) => (
+               <Row key={menuItem.itemID}>
               
-                    <td>{menuItem.itemDescription}</td>
-                    <td>{menuItem.itemCost}</td>
+                  
+                    <Col>{menuItem.menuID}</Col>
+                    <Col>{menuItem.itemName}</Col>
+              
+                    <Col>{menuItem.itemDescription}</Col>
+                    <Col>{menuItem.itemCost}</Col>
                    
                    
-                    </tr>
-            
+                   
+                    </Row>
               ))}
-              </table>
-          
+            
+              </Container>
 );
           
         

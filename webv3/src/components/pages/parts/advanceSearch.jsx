@@ -1,23 +1,27 @@
 import React from 'react';
-
+import { Container, Row, Col } from 'react-bootstrap';
 export class AdvanceSearch extends React.Component {
   render() {
 
   
 
     return(
-        <div className="properSpacing">
-            <div className="advanceSearch">
+        <Container className="properSpacing">
+            <Row>
+            <Col className="advanceSearch">
 
 
 
-            </div>
-
-            <div className="centered">
+            </Col>
+            </Row>
+            <Row>
+                <Col></Col>
+            <Col>
                 <button>Advanced Search</button>
-            </div>
-
-        </div>
+            </Col>
+            <Col></Col>
+            </Row>
+        </Container>
 
 
         );

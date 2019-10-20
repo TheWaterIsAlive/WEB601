@@ -149,10 +149,10 @@ span.lineUp {
 
 .advanceSearch {
 
-  width: 40%;
+ 
   height: 250px;
   background-color: #333;
-  margin-left: 30%;
+  
 
 }
 
@@ -248,10 +248,12 @@ li.content {
 
 }
 
-menuTable{
+.menuTable{
 
 width: 33%;
 
 
   
 }
+
+

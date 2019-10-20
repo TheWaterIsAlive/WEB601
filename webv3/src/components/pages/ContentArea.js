@@ -1,34 +1,23 @@
 import React from 'react';
- //import {Menuitem} from './menuitem'
-// import {BuisnessDetail} from './buisnessDetails'
-// import {CreateUser} from './createUser'
-
 import { Container, Row, Col } from 'react-bootstrap';
-// import Menuitem from './menuitem';
-
-
-export class ContentSpace extends React.Component {
- 
-  render() {
 
 
 
-  
+
+ export const ContentArea = (props) =>  (
 
 
-    
-   
-    return (
-        <Container>
+
+<Container>
           <Row>
           <Col>
-      
+          {props.items}
           {/* <Menuitem /> */}
           </Col>
         
           
           <Col>
-         
+         {props.snapIn}
           {/* {this.props.snapIn1}
           {this.props.snapIn2} */}
             {/* <CreateUser />
@@ -36,9 +25,6 @@ export class ContentSpace extends React.Component {
           </Col>
           </Row>
         </Container>
-        );
 
-    }
-}
-
-export default ContentSpace;
+)
+export default ContentArea
