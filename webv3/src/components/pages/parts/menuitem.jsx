@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-
+import { MenuPanel } from './menuPanel';
+//import { DeleteMenuItem } from './deleteMenuItem';
 
 export class Menuitem extends React.Component {
 
@@ -8,8 +9,10 @@ export class Menuitem extends React.Component {
             super(props);
             this.state = ({
                   isFetching: false,
-                  items: [], //array to store menu items so multiple can be rendered
-            })
+                  items: [],
+                  // thisID: ""
+            });
+            // this.handleSubmit = this.handleSubmit.bind(this);
       }
 
       GetMenuItem() {
@@ -36,38 +39,46 @@ export class Menuitem extends React.Component {
             this.GetMenuItem(); //Get array of items one the comonent is successfully mounted
       }
 
+      // handleSubmit(event) {// Sets up the ability to set up there  submint button events
+      //       event.preventDefault();
+
+      //       this.selectID();
+
+      //       fetch('http://localhost:4200/api/menuItem/' + this.state.thisID, {
+      //             method: 'delete',
+      //             headers: { 'Content-Type': 'application/json' }
+      //       });
+      // };
+      // selectID = (childData) => {
+      //       this.setState({ thisID: childData });
+
+
+      // }
+
+
 
       render() {
 
             return (
+                  // <form onSubmit={this.handleSubmit}>
                   <Container className="menuItem">
-
+                      
                         <Row>
                               <Col>Menu ID</Col>
-                              <Col>Name</Col>   
+                              <Col>Name</Col>
                               <Col>Description</Col>
                               <Col>Cost</Col>
                               {/* Sets up titles for columns */}
                         </Row>
 
-                              {/* Maps menu items so they can all be rendered */}
-                        {this.state.items.map((menuItem) => ( 
-                              <Row key={menuItem.itemID}> 
-                              {/* Loads one menu item per row */}
-
-
-                                    <Col>{menuItem.menuID}</Col>
-                                    <Col>{menuItem.itemName}</Col>
-
-                                    <Col>{menuItem.itemDescription}</Col>
-                                    <Col>{menuItem.itemCost}</Col>
-
-
-
-                              </Row>
+                        {/* Maps menu items so they can all be rendered */}
+                        {this.state.items.map((menuItem) => (
+                              <MenuPanel parentCallback={this.selectID} data={menuItem} edit='True'></MenuPanel>
                         ))}
-
+                        {/* <input type="submit" id='Submit'></input> */}
+                       
                   </Container>
+                 
             );
 
 
