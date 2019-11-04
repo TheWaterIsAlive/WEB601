@@ -6,7 +6,7 @@ export class AdvanceSearch extends React.Component {
 // I have started to switch to react bootstrap
 
         return (
-            <Container className="properSpacing">
+            <Container>
                 <Row>
                     <Col className="advanceSearch">
 
