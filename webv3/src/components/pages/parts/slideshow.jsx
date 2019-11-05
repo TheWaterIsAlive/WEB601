@@ -20,8 +20,8 @@ const properties = {
  
 export const Slideshow = () => {
     return (
-      <div className="slide-container slideformate contentSpacing" >
-        <Slide {...properties}>
+      <div className="slide-container slideformate" >
+        <Slide className="contentSpacing" {...properties}>
           <div className="each-slide" >
             <div className="contentSpacing" style={{'backgroundImage': `url(${slideImages[0]})`}}>
            

@@ -11,7 +11,30 @@ margin-bottom: 30px;
 
 margin: auto;
 min-width: auto;
-min-height: 1000px;
+min-height: 500px;
+
+
+}
+
+.itemForm{
+
+text-align: left;
+padding: 12px 20px;
+margin: 8px 0;
+
+}
+.formText{
+
+color: #BFBFBF;
+
+}
+
+.itemFormDescription{
+  height: 100px;
+}
+
+.formInput{
+width: 100%;
 
 
 }
@@ -109,6 +132,8 @@ h1.headerStyling{
 }
 
 
+
+
 .menuItemBox{
 background-color: #6b6b6b;
 padding-bottom: 30px;
@@ -123,6 +148,22 @@ height: 100%;
   border-radius: 0px;
   font-style: oblique;
 
+}
+
+
+.faqBox{
+
+ 
+    margin-bottom: 10px;
+    background-color: #adceed;
+    padding: 10px ;
+    height: auto;
+    border-style: solid;
+    border: #909090;
+    width: 100%;
+    text-align: center;
+   
+ 
 }
 
 

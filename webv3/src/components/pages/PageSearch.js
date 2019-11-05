@@ -1,22 +1,29 @@
 import React from 'react'
-import { Search } from './parts/search'
+
 import { AdvanceSearch } from './parts/advanceSearch'
 // import {ContentSpace} from './parts/contentSpace'
 import { Menuitem } from './parts/menuitem'
-import { ContentArea } from './ContentArea'
-import { BuisnessDetail } from './parts/buisnessDetails'
-import { CreateUser } from './parts/createUser'
+import { SearchArea } from './SearchArea'
+import { Container, Row, Col} from 'react-bootstrap';
+
 
 const PageSearch = () => {
     return (
-        <div>
-            <Search />
+        <Container>
+        
+            
             <AdvanceSearch />
-            <div>
-                <ContentArea items={<Menuitem />} snapIn={<div><BuisnessDetail /><CreateUser /></div>}></ContentArea>
+            <Row>
+                <Col xs="3"></Col>
+            <Col xs="6">
+                <SearchArea items={<Menuitem />}></SearchArea>
                 {/* <ContentSpace children={Menuitem} /> */}
-            </div>
-        </div>);
+            </Col>
+            <Col xs="3"></Col>
+
+            </Row>
+            </Container>
+    )
 }
 
 export default PageSearch

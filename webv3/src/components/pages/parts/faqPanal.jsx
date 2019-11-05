@@ -3,20 +3,24 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 
 
-export const FaqPanal = () => {
 
-//Place holder
+
+
+
+export const FaqPanal = (props) => {
+
+
 
     return (
-        <Container className="faq">
+        <Container className='faqBox'>
             <Row>
-                <Col className="faq">
-                    <h2 className="faq"> Is this site free?</h2>
+                <Col>
+                    <h2> {props.faqTitle}</h2>
                 </Col>
             </Row>
             <Row>
-                <Col className="faq">
-                    <p className="faq"> This site is free but if you want to give me money please do so!</p>
+                <Col>
+                    <p> {props.faqText}</p>
                 </Col>
 
             </Row>

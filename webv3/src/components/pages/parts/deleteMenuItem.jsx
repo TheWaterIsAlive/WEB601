@@ -1,5 +1,7 @@
 import React from 'react';
-import { Container, Row, Col} from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
+
+
 export class DeleteMenuItem extends React.Component {
   
   constructor() {
@@ -42,7 +44,7 @@ deleteItem() {// Sets up the ability to set up there  submint button events
 
     return (
 
-      <Container className="menuItemBox">
+      <Container className="menuItemBox itemForm">
 
        
         <Row>
@@ -62,7 +64,7 @@ deleteItem() {// Sets up the ability to set up there  submint button events
           <Col>
           <center>
         {/* <input type="submit" id="Submit" />  */}
-          <button onClick={this.deleteItem()}>Delete</button>
+          <button onClick={this.deleteItem.bind(this)}>Delete</button>
 
           </center>
         
