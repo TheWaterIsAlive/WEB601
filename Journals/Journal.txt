@@ -242,7 +242,7 @@ Knowledge of the life cycle react allows us to fully take advantage of how react
 have certain bits of code rendered at certain times.
 
 
-=====================================Class ???=========================================
+=============================================Class ???=========================================
 
 
 MVC vs Flux
@@ -251,3 +251,44 @@ MVC vs Flux
 Model view controller has a large number of brunchs which it has to manage many views and models per controller and they are all linked.
 
 This can make the 
+
+
+
+
+
+
+============================================6/11================================================
+
+Today in class we compaired the Redux cycle to an insurance company.
+Person goes to AA with a for which 
+
+Redux cycle:
+
+Action Creation => Client
+Action => Form
+Dispatch => Front Desk
+Reducers 
+State
+
+When designing redux we have to focus on Action creation and action as these will decide how we handle the creation.
+
+
+When were use redux we are updating a single array this is important to remenber as it is commonally believe that the 
+redux funtions are constantly creating new array. When creating the array we must use '[]' so the reducer knows what we are trying to create.
+
+After creating the reducer we then preform an action based on what type of requests is being passed.
+
+When naming action type the standard is to have the title being all caps with an underscore and not a dash.
+
+We have the choice between switch and if statments, however major developers avoid switch the reason for this is unknown. I may need to look in to
+the reason for this as my inclination is to use switch statments but if they is a spicific reason to avoid this it would be best that I do.
+
+'.filter' can take an error funtion and can take out an item from an array and check the rest of the array. After this point the filtered name is gonefrom
+the array. This many be useful for my project to remove unvalid enteies in my tables such as if a menu is deleted. I should look into more about this as
+I am unsure how it works fully and I only a have a ruffe understanding of why this would be useful.
+
+After creating all of the reducers we then combine them. 
+Redux allows us to remover much of the state from our react components. This is extrmenly important as the parsing of infomraiton is what is creating
+a lot of my issues as well as limiting what I can currently implement. The ability to be able to manage infomraiton in the way redux does
+will allow me to manage things such as 
+
