@@ -19,7 +19,7 @@ min-height: 500px;
 .itemForm{
 
 text-align: left;
-padding: 12px 20px;
+/* padding: 12px 20px; */
 margin: 8px 0;
 
 }
@@ -39,6 +39,11 @@ width: 100%;
 
 }
 
+.titleBox{
+
+background-color: #adceed;
+
+}
 .centeredText{
 
 
@@ -145,7 +150,7 @@ height: 100%;
 .menuItemTitle{
 
 
-  border-radius: 0px;
+ 
   font-style: oblique;
 
 }

@@ -49,7 +49,7 @@ export class AddMenuItem extends React.Component {
             <div className="menuItemBox ">
                  {/* a class made to make UI elements reuseable */}
 
-                <div className="centeredText"><h2>New Menu Item</h2></div>
+                <div className="centeredText titleBox"><h2>New Menu Item</h2></div>
                 <form onSubmit={this.handleSubmit}> 
                 <center className="formText">
                     <label>

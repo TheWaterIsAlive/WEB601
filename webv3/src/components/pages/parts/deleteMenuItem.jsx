@@ -48,7 +48,7 @@ deleteItem() {// Sets up the ability to set up there  submint button events
 
        
         <Row>
-          <Col className="centeredText">
+          <Col className="centeredText titleBox">
             <h2>
           Delete Item
           </h2>
