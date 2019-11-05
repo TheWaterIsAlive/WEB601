@@ -1,11 +1,13 @@
 import React from 'react';
 
+import { Container} from 'react-bootstrap';
+
 export class Search extends React.Component {
   render() {
 
 
     return (
-      <div className="padding properSpacing">
+      <Container className="contentSpacing">
         <center>
           <select className="padding">
             <option value="name">Name</option>
@@ -15,7 +17,7 @@ export class Search extends React.Component {
           </select>
           <input type="text" placeholder="Search.." className="padding" />
         </center>
-      </div>);
+      </Container>);
   }
 
 }

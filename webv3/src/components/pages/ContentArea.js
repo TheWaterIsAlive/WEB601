@@ -8,16 +8,16 @@ export const ContentArea = (props) => (
 
 
 // Has other companents passed into it
-  <Container>
+  <Container className="contentArea">
     <Row>
-      <Col> 
+      <Col xs="5"> 
       {/* Sets up the column to display menu items */}
         {props.items}
  
       </Col>
+<Col xs="2"></Col>
 
-
-      <Col>
+      <Col xs="5">
         {props.snapIn} 
         {/* Allows any set of editing tools to be loaded at once */}
        

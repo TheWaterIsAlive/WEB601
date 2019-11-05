@@ -1,4 +1,276 @@
-body {
+
+
+.contentSpacing{
+
+margin-bottom: 30px;
+
+}
+
+
+.contentArea{
+
+margin: auto;
+min-width: auto;
+min-height: 1000px;
+
+
+}
+
+.centeredText{
+
+
+text-align: center;
+
+}
+
+
+.footer {
+  clear: both;
+  background-color: #909090;
+  color: #BFBFBF;
+  text-align: center;
+  height: 100px;
+  width: 100%;
+  margin-bottom: 0px;
+
+}
+
+
+.navCol{
+background-color: #212121;
+
+
+
+}
+
+
+.navLink{
+
+text-decoration: none;
+color: #BFBFBF;
+text-align: center;
+
+
+}
+
+.navRow{
+
+background-color: #6B6B6B;
+height: 35px;
+}
+
+
+
+.pageStyling{
+
+background-color: #BFBFBF;
+color: #000000;
+font-family: 'Times New Roman', Times, serif;
+padding: 0px;
+
+}
+
+
+.header {
+
+  height: 300px;
+  width: 100%;
+
+
+}
+
+
+.headerStyling{
+background-color: #909090;
+padding: 0px;
+text-align: center;
+
+}
+
+h1.headerStyling{
+
+
+  font-size: 700%;
+}
+
+
+
+.menuItem {
+  margin-bottom: 10px;
+  background-color: #adceed;
+  padding: 10% ;
+  height: auto;
+  border-style: solid;
+  border: #909090;
+  width: 100%;
+  text-align: left;
+ 
+
+}
+
+
+.menuItemBox{
+background-color: #6b6b6b;
+padding-bottom: 30px;
+height: 100%;
+
+}
+
+
+.menuItemTitle{
+
+
+  border-radius: 0px;
+  font-style: oblique;
+
+}
+
+
+
+
+
+/* ====================================+Slide CSS+=========================== */
+
+
+.slide-container {
+  width: 70%;
+  margin: auto; }
+
+h3 {
+  text-align: center; }
+
+.each-slide > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: 300px;
+}
+
+.each-slide span {
+  padding: 20px;
+  font-size: 20px;
+  background: #efefef;
+  text-align: center;
+}
+
+.each-fade {
+  display: flex;
+}
+
+.each-fade .image-container {
+  width: 75%;
+  overflow: hidden;
+}
+
+.each-fade .image-container img {
+  width: 100%;
+}
+
+.each-fade h2 {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background: #adceed;
+}
+
+.lineUp{
+
+  display: inline-block;
+
+}
+span.lineUp{
+
+ float: top;
+
+}
+
+
+
+
+
+/* .slideformate{
+
+
+width: 600px;
+
+
+} */
+
+
+
+/* ====================================-Slide CSS-=========================== */
+
+/* .menuSnapIn{
+
+
+
+}
+
+
+
+.advanceSearch{
+
+
+
+
+}
+
+
+
+
+.faqContainer{
+
+
+
+
+
+}
+
+
+.faqCol{
+
+
+
+}
+
+h2.faq{
+
+
+
+
+
+}
+
+p.faq{
+
+
+
+
+
+}
+
+
+.menuItem{
+
+    
+}
+
+
+
+.mainPage{
+
+
+
+
+} */
+
+
+
+
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -13,14 +285,6 @@ code {
 }
 
 
-.footer {
-  clear: both;
-  background-color: #111;
-  height: 100px;
-  width: 100%;
-  margin-bottom: 0px;
-
-}
 
 .navBar {
   background-color: tan;
@@ -73,79 +337,11 @@ li a {
   text-decoration: none;
 }
 
-/* Change the link color to #111 (black) on hover */
+/* Change the link color to #111 (black) on hover
 li a:hover {
   background-color: #111;
 }
 
-
-.slide-container {
-  width: 70%;
-  margin: auto;
-}
-
-h3 {
-  text-align: center;
-}
-
-.each-slide>div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-size: cover;
-  height: 300px;
-}
-
-.each-slide span {
-  padding: 20px;
-  font-size: 20px;
-  background: #efefef;
-  text-align: center;
-}
-
-.each-fade {
-  display: flex;
-}
-
-.each-fade .image-container {
-  width: 75%;
-  overflow: hidden;
-}
-
-.each-fade .image-container img {
-  width: 100%;
-}
-
-.each-fade h2 {
-  width: 25%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  background: #adceed;
-}
-
-.lineUp {
-
-  display: inline-block;
-
-}
-
-span.lineUp {
-
-  float: top;
-
-}
-
-
-
-.slideformate {
-
-
-  width: 600px;
-
-
-}
 
 .advanceSearch {
 
@@ -224,13 +420,7 @@ li.content {
 
 }
 
-.menuItem {
-  margin: 2px;
-  background-color: #adceed;
-  padding: 2% 3%;
-  height: auto;
 
-}
 
 .faq {
   background-color: aquamarine;
@@ -256,4 +446,4 @@ li.content {
 
 
 
-}
+} */

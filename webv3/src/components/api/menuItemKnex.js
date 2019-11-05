@@ -43,7 +43,7 @@ function getSingleMenuItemKnex(req, res) {
         .select('menuID', 'itemName', 'itemDescription',
             'itemCost', 'energy', 'protein', 'fat',
             'carbohydrates', 'sugar', 'dietaryFibre',
-            'sodium', 'allergenCondentions')
+            'sodium', 'allergenCondentions', 'image')
         .from('menuItem')
         .where({
             itemID: `${id}` //This is the imput which lets the database find the specifid record is managed

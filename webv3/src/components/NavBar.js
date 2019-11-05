@@ -1,46 +1,60 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 // import { Nav, NavBar } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
+
+
+  
+
 
 
 
 const NavBar = () => {
     return (
 
-        <div className="ui  pointing right menu" style={{ backgroundColor: 'lightBlue' }}>
-            <ul className="navArea">
-                <li className="navArea">
-                    <Link to="/" className="item" style={{ backgroundColor: 'lightGrey' }}>
+
+
+      
+
+ 
+        <Container className="contentSpacing">
+
+
+
+        <Row className="navRow">
+           
+                <Col className="navCol">
+                    <Link to="/" className="navLink">
                         Home
             </Link>
-                </li>
-                <li className="navArea">
-                    <Link to="/Menu" className="item" style={{ backgroundColor: 'lightGrey' }}>
+                </Col>
+                <Col className="navCol">
+                    <Link to="/Menu" className="navLink" >
                         Menu
                 </Link>
 
 
 
-                </li>
-                <li className="right menu navArea">
-                    <Link to="/Search" className="item" style={{ backgroundColor: 'lightGrey' }}>
+                </Col>
+                <Col className="navCol">
+                    <Link to="/Search" className="navLink" >
                         Search
                 </Link>
 
-                </li>
-                <li className="right menu navArea">
-                    <Link to="/Menu/Item" className="item" style={{ backgroundColor: 'lightGrey' }}>
+                </Col>
+                <Col className="navCol">
+                    <Link to="/Menu/Item" className="navLink">
                         Item
                 </Link>
-                </li>
-                <li className="right menu navArea">
-                    <Link to="/FAQ" className="item" style={{ backgroundColor: 'lightGrey' }}>
+                </Col>
+                <Col className="navCol">
+                    <Link to="/FAQ" className="navLink">
                         FAQ
                 </Link>
-                </li>
-            </ul>
-        </div>
-
+                </Col>
+            
+        </Row>
+        </Container>
     )
 }
 
