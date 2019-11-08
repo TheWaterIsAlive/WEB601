@@ -68,9 +68,6 @@ export class MenuPanel extends React.Component {
 
                     {/* <Row key={this.props.data.itemID}> */}
 
-
-
-
                     <Row>
                         
                         <Col><h2>{this.props.data.itemName}#{this.props.data.itemID}</h2></Col>
@@ -86,11 +83,21 @@ export class MenuPanel extends React.Component {
 
                         <Row>
                         <Col>Cost:{this.props.data.itemCost}
-                        <div style={{'backgroundImage': `url(${this.props.data.image})`}} />
-                        </Col>
+                       
+                      
                         
+                     {/* <div style={{'backgroundImage': `url(${})`}} /> */}
+                        </Col>
+                       
 
                         </Row>
+                        <Row> <Col>
+                      
+                      <img className="menuItemImg" alt="" 
+                      src={this.props.data.image}>  
+                      </img>
+                     
+                      </Col></Row>
 
 
                     {/* </Row> */}

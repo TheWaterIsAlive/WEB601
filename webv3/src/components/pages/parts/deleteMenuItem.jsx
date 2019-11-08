@@ -1,40 +1,39 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import {
+  Container,
+  Row,
+  Col
+} from 'react-bootstrap';
 
 
 export class DeleteMenuItem extends React.Component {
-  
-  constructor() {
-    super();
-    // // this.handleSubmit = this.handleSubmit.bind(this);
-    this.state=({
 
-      itemsID: '1'
+    constructor() {
+      super();
+      // // this.handleSubmit = this.handleSubmit.bind(this);
+      this.state = ({
 
-    });
-}
+        itemsID: '1'
 
-
-updateID(event){
-
-  this.setState({
-    itemsID: event.target.value
-  })
-}
-
-deleteItem() {// Sets up the ability to set up there  submint button events
-  // event.preventDefault();
-  fetch('http://localhost:4200/api/menuItem/' + this.state.itemsID, {
-    method: 'DELETE'
-  });
-
- 
-}
+      });
+    }
 
 
+    updateID(event) {
+
+      this.setState({
+        itemsID: event.target.value
+      })
+    }
+
+    deleteItem() { // Sets up the ability to set up there  submint button events
+      // event.preventDefault();
+      fetch('http://localhost:4200/api/menuItem/' + this.state.itemsID, {
+        method: 'DELETE'
+      });
 
 
-  
+    }
   
   
   

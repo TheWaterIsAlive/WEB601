@@ -5,10 +5,11 @@ import { Menuitem } from "./parts/menuitem";
 import { DeleteMenuItem } from "./parts/deleteMenuItem"
 
 
+
 const PageMenu = () => {
     return (
         <div>
-            <ContentArea items={<Menuitem />} snapIn={<div><DeleteMenuItem /></div>} />
+            <ContentArea items={<Menuitem />} snapIn={<div><DeleteMenuItem /> </div>} />
         </div>
     );
 }

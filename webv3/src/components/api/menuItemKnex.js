@@ -17,7 +17,7 @@ function getAllMenuItemKnex(req, res) {
     knex
         .select('itemID', 'menuID', 'itemName', 'itemDescription',  // Select column are the columns from the database 
             'itemCost', 'energy', 'protein', 'fat', 'carbohydrates', // which will be retrieve and displayed to the user
-            'sugar', 'dietaryFibre', 'sodium', 'allergenCondentions')
+            'sugar', 'dietaryFibre', 'sodium', 'allergenCondentions', 'image')
         .from('menuItem')//This decides what table the columns will be selected from
 
         /* Provides feedback on the resaults of 
