@@ -253,6 +253,14 @@ Model view controller has a large number of brunchs which it has to manage many 
 This can make the 
 
 
+===========================================1/11==========================================
+
+This lession I was sick.
+
+Accourding to the class we when over a tutorial about how to implement Redux.
+Many of my class mate had issues getting the tutorial to work but their is an example provided by the tutor which apparently works better.
+
+I will need to go over this tutorial in my own time.
 
 
 
@@ -291,4 +299,26 @@ After creating all of the reducers we then combine them.
 Redux allows us to remover much of the state from our react components. This is extrmenly important as the parsing of infomraiton is what is creating
 a lot of my issues as well as limiting what I can currently implement. The ability to be able to manage infomraiton in the way redux does
 will allow me to manage things such as 
+
+================================================8/11==========================================================
+
+
+This class we went over two examples for a redux based log in system.
+
+The first example let us log in with test test and the second let us register and delete accounts.
+This is simlar to what I wish to do with my web app. I wish to have a log in screen which changes which companants are deisplayed where 
+only a log in user can see and edit menus for the busness the manage this is a good starting point.
+
+While we were trying to get the exmaples too work we had a few errors:
+
+We needed to use npm i -g react-scripts@latest to install the approprate packetages for the program too run.
+The program had used a config file which was empty, to fix this we had to remove any mention of it from the files in the program.
+
+I think on my site it would best to place the log in place of any editational panals with the registration button taking the user to a new page.
+
+The code in the examples is simalar to that which is used with our restful api.
+ But it is slightly different and in other places it doesn't seem the same.
+
+ One large part of this project is it uses a false back end which is something I don't understand and will proberly need to look into to
+ properly understand my program.
 
