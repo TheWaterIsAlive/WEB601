@@ -61,19 +61,19 @@ export class Menuitem extends React.Component {
 
             return (
                   // <form onSubmit={this.handleSubmit}>
-                  <Container className="menuItem">
-                      
-                        <Row>
+                  <Container className="menuItemBox" >
+                        <Row><Col><h2 className="centeredText">Menu Items</h2></Col></Row>
+                        {/* <Row className="menuItem menuItemTitle">
                               <Col>Menu ID</Col>
                               <Col>Name</Col>
                               <Col>Description</Col>
                               <Col>Cost</Col>
-                              {/* Sets up titles for columns */}
-                        </Row>
+                              {/* Sets up titles for columns }
+                        </Row> */}
 
                         {/* Maps menu items so they can all be rendered */}
                         {this.state.items.map((menuItem) => (
-                              <MenuPanel parentCallback={this.selectID} data={menuItem} edit='True'></MenuPanel>
+                              <MenuPanel parentCallback={this.selectID} data={menuItem} edit='False'></MenuPanel>
                         ))}
                         {/* <input type="submit" id='Submit'></input> */}
                        

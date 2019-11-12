@@ -28,7 +28,8 @@ export class AddMenuItem extends React.Component {
                 "sugar": this.sugar.value,
                 "dietaryFibre": this.dietaryFibre.value,
                 "sodium": this.sodium.value,
-                "allergenCondentions": this.allergenCondentions.value
+                "allergenCondentions": this.allergenCondentions.value,
+                "image": this.image.value
             }) // The aboves use this and value as that is what this code is refering too
 
         }); confirmable.then((response) => response.json()).then((json) => {
@@ -45,62 +46,68 @@ export class AddMenuItem extends React.Component {
 
 
         return (
-            <div className="menuSnapIn">
+            <div className="menuItemBox ">
                  {/* a class made to make UI elements reuseable */}
 
-
+                <div className="centeredText titleBox"><h2>New Menu Item</h2></div>
                 <form onSubmit={this.handleSubmit}> 
+                <center className="formText">
                     <label>
                         Menu ID:
-                    <input ref={(ref) => { this.menuID = ref }} type="text" id="menuID" name="menuID" autoComplete="off" />
+                    <input className="formInput" ref={(ref) => { this.menuID = ref }} type="text" id="menuID" name="menuID" autoComplete="off" />
                     </label><br></br>
                     <label>
                         Item Name:
-                    <input ref={(ref) => { this.itemName = ref }} type="text" id="itemName" name="itemName" autoComplete="off" />
+                    <input className="formInput"  ref={(ref) => { this.itemName = ref }} type="text" id="itemName" name="itemName" autoComplete="off" />
                     </label><br></br>
                     <label>
                         Item Description:
-                    <input ref={(ref) => { this.itemDescription = ref }} type="text" id="itemDescription" name="itemDescription" autoComplete="off" />
+                    <input className="formInput itemFormDescription" ref={(ref) => { this.itemDescription = ref }} type="text" id="itemDescription" name="itemDescription" autoComplete="off" />
                     </label><br></br>
                     <label>
                         Item Cost:
-                    <input ref={(ref) => { this.itemCost = ref }} type="text" id="itemCost" name="itemCost" autoComplete="off" />
+                    <input className="formInput"  ref={(ref) => { this.itemCost = ref }} type="text" id="itemCost" name="itemCost" autoComplete="off" />
                     </label><br></br>
                     <label>
                         Energy:
-                    <input ref={(ref) => { this.energy = ref }} type="text" id="energy" name="energy" autoComplete="off" />
+                    <input className="formInput"  ref={(ref) => { this.energy = ref }} type="text" id="energy" name="energy" autoComplete="off" />
                     </label><br></br>
                     <label>
                         Protein:
-                    <input ref={(ref) => { this.protein = ref }} type="text" id="protein" name="protein" autoComplete="off" />
+                    <input className="formInput"  ref={(ref) => { this.protein = ref }} type="text" id="protein" name="protein" autoComplete="off" />
                     </label><br></br>
                     <label>
                         Fat:
-                    <input ref={(ref) => { this.fat = ref }} type="text" id="fat" name="fat" autoComplete="off" />
+                    <input className="formInput"  ref={(ref) => { this.fat = ref }} type="text" id="fat" name="fat" autoComplete="off" />
                     </label><br></br>
 
                     <label>
                         Carbohydrates:
-                    <input ref={(ref) => { this.carbohydrates = ref }} type="text" id="carbohydrates" name="carbohydrates" autoComplete="off" />
+                    <input className="formInput"  ref={(ref) => { this.carbohydrates = ref }} type="text" id="carbohydrates" name="carbohydrates" autoComplete="off" />
                     </label><br></br>
                     <label>
                         Sugar:
-                    <input ref={(ref) => { this.sugar = ref }} type="text" id="sugar" name="sugar" autoComplete="off" />
+                    <input className="formInput"  ref={(ref) => { this.sugar = ref }} type="text" id="sugar" name="sugar" autoComplete="off" />
                     </label><br></br>
                     <label>
                         Dietary Fibre:
-                    <input ref={(ref) => { this.dietaryFibre = ref }} type="text" id="dietaryFibre" name="dietaryFibre" autoComplete="off" />
+                    <input className="formInput"  ref={(ref) => { this.dietaryFibre = ref }} type="text" id="dietaryFibre" name="dietaryFibre" autoComplete="off" />
                     </label><br></br>
                     <label>
                         Sodium:
-                    <input ref={(ref) => { this.sodium = ref }} type="text" id="sodium" name="sodium" autoComplete="off" />
+                    <input className="formInput"  ref={(ref) => { this.sodium = ref }} type="text" id="sodium" name="sodium" autoComplete="off" />
                     </label><br></br>
                     <label>
                         Allergen Condentions:
-                    <input ref={(ref) => { this.allergenCondentions = ref }} type="text" id="allergenCondentions" name="allergenCondentions" autoComplete="off" />
+                    <input className="formInput"  ref={(ref) => { this.allergenCondentions = ref }} type="text" id="allergenCondentions" name="allergenCondentions" autoComplete="off" />
+                    </label><br></br>
+                    <label>
+                        Image:
+                    <input className="formInput"  ref={(ref) => { this.image = ref }} type="text" id="image" name="image" autoComplete="off" />
                     </label><br></br>
                     <input type="submit" id="Submit" /> 
                     {/* Table which contains feild fpr various different fields  */}
+                    </center>
                 </form>
             </div>
 

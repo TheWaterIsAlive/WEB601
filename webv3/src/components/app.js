@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter, Route } from 'react-router-dom'
-
+import { Container, Row, Col } from 'react-bootstrap';
 import PageMenu from './pages/PageMenu'
 import PageSearch from './pages/PageSearch'
 import PageItem from './pages/PageItem'
@@ -14,10 +14,11 @@ import { Footer } from './pages/parts/footer'
 const App = () => {
     return (
 
-        <div className="ui container">
+        <Container className="pageStyling">
             <Header />
             <BrowserRouter>
-                <div>
+            <Row>
+                <Col>
                     <NavBar />
                     <Route path="/" exact component={PageMain} />
                     <Route path="/Menu" exact component={PageMenu} />
@@ -25,10 +26,11 @@ const App = () => {
                     <Route path="/Menu/Item" exact component={PageItem} />
                     <Route path="/FAQ" exact component={PageFAQ} />
 
-                </div>
+                </Col>
+                </Row>
             </BrowserRouter>
             <Footer />
-        </div>
+        </Container>
     )
 }
 

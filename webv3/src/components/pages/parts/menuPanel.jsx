@@ -41,9 +41,14 @@ export class MenuPanel extends React.Component {
                     <Row key={this.props.data.itemID}>
 
 
+                    <Row>
+                        <Col xs="6">Item ID:</Col>
+                        <Col xs="6">{this.props.data.itemID}</Col>
+                    </Row>
+                        {/* <Col>{this.props.data.menuID}</Col> */}
 
-                        <Col>{this.props.data.menuID}</Col>
-                        <Col>{this.props.data.itemName}</Col>
+                    <Row><Col>{this.props.data.itemName}</Col></Row>
+                        
 
                         <Col>{this.props.data.itemDescription}</Col>
                         <Col>{this.props.data.itemCost}</Col>
@@ -61,19 +66,41 @@ export class MenuPanel extends React.Component {
                 <Container className="menuItem">
 
 
-                    <Row key={this.props.data.itemID}>
+                    {/* <Row key={this.props.data.itemID}> */}
 
-
-
-                        <Col>{this.props.data.menuID}</Col>
-                        <Col>{this.props.data.itemName}</Col>
-
-                        <Col>{this.props.data.itemDescription}</Col>
-                        <Col>{this.props.data.itemCost}</Col>
-
-
-
+                    <Row>
+                        
+                        <Col><h2>{this.props.data.itemName}#{this.props.data.itemID}</h2></Col>
+                      
                     </Row>
+                       
+
+                    <Row>
+                     
+                        <Col>{this.props.data.itemDescription}</Col>
+                        </Row>
+                        
+
+                        <Row>
+                        <Col>Cost:{this.props.data.itemCost}
+                       
+                      
+                        
+                     {/* <div style={{'backgroundImage': `url(${})`}} /> */}
+                        </Col>
+                       
+
+                        </Row>
+                        <Row> <Col>
+                      
+                      <img className="menuItemImg" alt="" 
+                      src={this.props.data.image}>  
+                      </img>
+                     
+                      </Col></Row>
+
+
+                    {/* </Row> */}
 
 
                 </Container>
