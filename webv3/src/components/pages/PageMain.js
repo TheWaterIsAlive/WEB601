@@ -1,16 +1,16 @@
 import React from 'react'
-import {Search} from './parts/search.jsx'
-import {Slideshow} from './parts/slideshow.jsx'
+import { Search } from './parts/search.jsx'
+import { Slideshow } from './parts/slideshow.jsx'
 
 
 const PageMain = () => {
     return (
-    <div>
+        <div>
 
-        <Search />
-        <Slideshow />
-       
-    </div>);
+            <Search />
+            <Slideshow />
+
+        </div>);
 }
 
 export default PageMain

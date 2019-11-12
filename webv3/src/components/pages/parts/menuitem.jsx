@@ -1,33 +1,88 @@
 import React from 'react';
-
-
+import { Container, Row, Col } from 'react-bootstrap';
+import { MenuPanel } from './menuPanel';
+//import { DeleteMenuItem } from './deleteMenuItem';
 
 export class Menuitem extends React.Component {
 
+      constructor(props) { //Has infomration past in as a props so that the component can use it
+            super(props);
+            this.state = ({
+                  isFetching: false,
+                  items: [],
+                  // thisID: ""
+            });
+            // this.handleSubmit = this.handleSubmit.bind(this);
+      }
 
-    render() {
-        
-             return ( 
-             <div>
-              <div className="menuItem">
-                <ol className="content inline">
-                  <li>
-                    <span >Tea</span>
-                  </li>
-                  <li>
-                    <span>Hells Coffee</span>
-                  </li>
-                  <li>
-                    <span >$6.00</span>
-                  </li>
-                </ol>
-                 <img className="inline menuImg" alt="Tea" src="https://lh3.googleusercontent.com/kiHD4Rr8c82nmTM-jpbJMF1HbNxMPD4-i0XwpeJPmLAbT3uCN__JoUJkV_maN-r8Yl7decWqQOz2CoaZevi_CYyatrkoVii2yBK-7XJFLTkbu8F1T5nblbIlPhCZ_aJ2g0zxE5wSYQ=w1400"></img>
-              </div>
-            </div>
-);
-          
-        
-        
+      GetMenuItem() {
+            fetch('http://localhost:4200/api/menuItem/')
+                  .then(res => res.json())
+                  .then(data => {
+                        if (data.cod === '404') {
+                              this.setState({
+                                    isFetching: false,
+                              })
+                        } else {
+                              this.setState({
+                                    isFetching: true, //Gets all menu items from the menuItem table and stores them in the items state
+                                    items: data,
+                              });
+                        }
+                  })
+                  .catch(err => {
+                        console.log(err);
+                  })
+      }
+
+      componentDidMount() {
+            this.GetMenuItem(); //Get array of items one the comonent is successfully mounted
+      }
+
+      // handleSubmit(event) {// Sets up the ability to set up there  submint button events
+      //       event.preventDefault();
+
+      //       this.selectID();
+
+      //       fetch('http://localhost:4200/api/menuItem/' + this.state.thisID, {
+      //             method: 'delete',
+      //             headers: { 'Content-Type': 'application/json' }
+      //       });
+      // };
+      // selectID = (childData) => {
+      //       this.setState({ thisID: childData });
+
+
+      // }
+
+
+
+      render() {
+
+            return (
+                  // <form onSubmit={this.handleSubmit}>
+                  <Container className="menuItem">
+                      
+                        <Row>
+                              <Col>Menu ID</Col>
+                              <Col>Name</Col>
+                              <Col>Description</Col>
+                              <Col>Cost</Col>
+                              {/* Sets up titles for columns */}
+                        </Row>
+
+                        {/* Maps menu items so they can all be rendered */}
+                        {this.state.items.map((menuItem) => (
+                              <MenuPanel parentCallback={this.selectID} data={menuItem} edit='True'></MenuPanel>
+                        ))}
+                        {/* <input type="submit" id='Submit'></input> */}
+                       
+                  </Container>
+                 
+            );
+
+
+
       }
 }
 

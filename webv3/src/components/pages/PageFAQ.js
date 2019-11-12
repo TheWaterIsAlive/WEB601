@@ -1,5 +1,5 @@
 import React from 'react'
-import {FaqPanal} from './parts/faqPanal'
+import { FaqPanal } from './parts/faqPanal'
 const PageFAQ = () => {
     return <div>
 
@@ -7,6 +7,6 @@ const PageFAQ = () => {
         <FaqPanal />
         <FaqPanal />
     </div>
-    }
-    
+}
+
 export default PageFAQ
