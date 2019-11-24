@@ -62,7 +62,7 @@ export class Menuitem extends React.Component {
             return (
                   // <form onSubmit={this.handleSubmit}>
                   <Container className="menuItemBox" >
-                        <Row><Col><h2 className="centeredText">Menu Items</h2></Col></Row>
+                        <Row className="menuItemTitle"><Col><h2 className="centeredText">Menu Items</h2></Col></Row>
                         {/* <Row className="menuItem menuItemTitle">
                               <Col>Menu ID</Col>
                               <Col>Name</Col>

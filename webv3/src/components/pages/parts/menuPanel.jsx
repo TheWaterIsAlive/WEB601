@@ -47,7 +47,7 @@ export class MenuPanel extends React.Component {
                     </Row>
                         {/* <Col>{this.props.data.menuID}</Col> */}
 
-                    <Row><Col>{this.props.data.itemName}</Col></Row>
+                    <Row><Col >{this.props.data.itemName}</Col></Row>
                         
 
                         <Col>{this.props.data.itemDescription}</Col>
@@ -70,14 +70,14 @@ export class MenuPanel extends React.Component {
 
                     <Row>
                         
-                        <Col><h2>{this.props.data.itemName}#{this.props.data.itemID}</h2></Col>
+                        <Col className="menuFoodName">{this.props.data.itemName}#{this.props.data.itemID}</Col>
                       
                     </Row>
                        
 
                     <Row>
                      
-                        <Col>{this.props.data.itemDescription}</Col>
+                        <Col className="mobile">{this.props.data.itemDescription}</Col>
                         </Row>
                         
 

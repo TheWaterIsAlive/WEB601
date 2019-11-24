@@ -1,110 +1,28 @@
 
-
-.contentSpacing{
-
-margin-bottom: 30px;
-
-}
-
-
-.contentArea{
-
-margin: auto;
-min-width: auto;
-min-height: 500px;
-
-
-}
-
-.itemForm{
-
-text-align: left;
-/* padding: 12px 20px; */
-margin: 8px 0;
-
-}
-.menuItemImg{
-
-width: 80%;
-height: 100%;
-
-}
-.formText{
-
-color: #BFBFBF;
-
-}
-
-.itemFormDescription{
-  height: 100px;
-}
-
-.formInput{
-width: 100%;
-
-
-}
-
-.titleBox{
-
-background-color: #adceed;
-
-}
-.centeredText{
-
-
-text-align: center;
-
-}
-
-
-.footer {
-  clear: both;
-  background-color: #909090;
-  color: #BFBFBF;
-  text-align: center;
-  height: 100px;
-  width: 100%;
-  margin-bottom: 0px;
-
-}
-
-
-.navCol{
-background-color: #212121;
-
-
-
-}
-
-
-.navLink{
-
-text-decoration: none;
-color: #BFBFBF;
-text-align: center;
-
-
-}
-
-.navRow{
-
-background-color: #6B6B6B;
-height: 35px;
-}
-
-
-
+/*===========================Page===============================*/
 .pageStyling{
 
-background-color: #BFBFBF;
-color: #000000;
-font-family: 'Times New Roman', Times, serif;
-padding: 0px;
+  background-color: #BFBFBF;
+  color: #000000;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 0px;
+  
+  }
+  @media only screen and (max-width: 250px) {
+  .pageStyling{
 
-}
+    background-color: #BFBFBF;
+    color: #000000;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0px;
+    margin: 0%;
+    
+    }
+  }
+  
+/*===========================Page===============================*/
 
-
+/*===========================Header===============================*/
 .header {
 
   height: 300px;
@@ -128,8 +46,77 @@ h1.headerStyling{
 }
 
 
+@media only screen and (max-width: 600px) {
+  .header {
+
+    height: 200px;
+    width: 100%;
+  
+  
+  }
+  h1.headerStyling{
+
+
+    font-size: 300%;
+  }
+  
+
+
+}
+
+/*===========================Header===============================*/
+/*===========================Reactive===============================*/
+@media only screen and (max-width: 600px) {
+.mobile{
+
+  display: none;
+}
+}
+@media only screen and (min-width: 600px) {
+.desktop{
+  display: none;
+}
+}
+/*===========================Reactive===============================*/
+
+
+/*===========================Nav===============================*/
+.navCol{
+  /* background-color: #212121; */
+  padding: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 100%;
+  min-width: 75px;
+
+  
+  }
+  
+  
+  .navLink{
+  
+  text-decoration: none;
+  color: #BFBFBF;
+  text-align: center;
+  
+  
+  }
+  
+  .navRow{
+  
+  background-color: #6B6B6B;
+    padding: 0%;
+    padding-bottom: 7px;
+    margin: 0%;
+  }
+  
+  
+
+/*===========================Nav===============================*/
+/*===========================Menu Item===============================*/
 
 .menuItem {
+  margin-top: 4px;
   margin-bottom: 10px;
   background-color: #adceed;
   padding: 10% ;
@@ -147,41 +134,87 @@ h1.headerStyling{
 
 .menuItemBox{
 background-color: #6b6b6b;
+padding: 0%;
+margin: 0%;
 padding-bottom: 30px;
 height: 100%;
+
 
 }
 
 
 .menuItemTitle{
 
-
- 
+  background-color: #adceed;
+ padding: 0%;
+ margin: 0%;
   font-style: oblique;
+  align-content: center;
 
 }
 
 
+.menuFoodName{
+
+  font-size: large;
+
+}
+
+
+@media only screen and (max-width: 600px) {
+.menuFoodName{
+
+  font-size: small;
+
+}
+}
+.menuItemImg{
+
+  width: 100%;
+  height: 100%;
+  max-height: 200px;
+  }
+
+
+/*===========================Menu Item===============================*/
+
+
+/*===========================Footer===============================*/
+
+
+.footer {
+  clear: both;
+  background-color: #909090;
+  color: #BFBFBF;
+  text-align: center;
+  height: 100px;
+  width: 100%;
+  margin-bottom: 0px;
+
+}
+/*===========================Footer===============================*/
+
+/*===========================FAQ===============================*/
 .faqBox{
 
  
-    margin-bottom: 10px;
-    background-color: #adceed;
-    padding: 10px ;
-    height: auto;
-    border-style: solid;
-    border: #909090;
-    width: 100%;
-    text-align: center;
-   
+  margin-bottom: 10px;
+  background-color: #adceed;
+  padding: 10px ;
+  height: auto;
+  border-style: solid;
+  border: #909090;
+  width: 100%;
+  text-align: center;
  
+
 }
 
+/*===========================FAQ===============================*/
 
 
 
-
-/* ====================================+Slide CSS+=========================== */
+/* ==========================Slide CSS=========================*/
 
 
 .slide-container {
@@ -240,262 +273,80 @@ span.lineUp{
 }
 
 
+/* ==========================Slide CSS=========================*/
 
+/* ==========================Forms=========================*/
 
 
-/* .slideformate{
 
+.formTitle{
 
-width: 600px;
-
-
-} */
-
-
-
-/* ====================================-Slide CSS-=========================== */
-
-/* .menuSnapIn{
-
-
-
-}
-
-
-
-.advanceSearch{
-
-
-
-
-}
-
-
-
-
-.faqContainer{
-
-
-
-
-
-}
-
-
-.faqCol{
-
-
-
-}
-
-h2.faq{
-
-
-
-
-
-}
-
-p.faq{
-
-
-
-
-
-}
-
-
-.menuItem{
-
-    
-}
-
-
-
-.mainPage{
-
-
-
-
-} */
-
-
-
-
-/* body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-
-
-
-.navBar {
-  background-color: tan;
-
-
-}
-
-.header {
-
-  height: 300px;
-  width: 100%;
-
-
-}
-
-
-h1.headerText {
-
-  position: absolute;
-  left: 33%;
-  top: 19%;
-
-}
-
-.navBack {
-  background-color: aqua;
-
-
-
-}
-
-
-ul.navArea {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
-
-li.navArea {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-/* Change the link color to #111 (black) on hover
-li a:hover {
-  background-color: #111;
-}
-
-
-.advanceSearch {
-
-
-  height: 250px;
-  background-color: #333;
-
-
-}
-
-.centered {
-
-  margin-left: 45%;
-
-
-}
-
-
-
-.contentFormat {
-  display: inline-block;
-  width: 33%;
-  height: auto;
-  background-color: #333;
-  margin-left: 10%;
-
-
-
-}
-
-.contentFormatLeft {
-
-  float: left;
-
-}
-
-.contentFormatRight {
-
-  float: right;
-
-}
-
-
-
-
-ul.content {
-  list-style-type: none;
-  overflow: hidden;
-
-}
-
-ol.content {
-  list-style-type: none;
-  overflow: hidden;
-  float: left;
-
-}
-
-
-li.content {
-  float: left;
-}
-
-.properSpacing {
-
-  margin-top: 30px;
-  margin-bottom: 30px;
-
-}
-
-.menuImg {
-
-  width: 100px;
-  height: 100px;
-  float: right;
-
-}
-
-
-
-.faq {
-  background-color: aquamarine;
-  width: 80%;
-  text-align: center;
-  margin-left: 10%;
-  margin-bottom: 4%;
-}
-
-.menuSnapIn {
-  height: auto;
-  width: auto;
+  color: BFBFBF;
   background-color: #adceed;
-  text-align: center;
-  padding: 2% 3%;
+  font-size: large;
+
+}
+
+.formBox{
+
+background-color: #909090;
+color: BFBFBF;
+
+}
+
+
+
+/* ==========================Forms=========================*/
+/* 
+
+.contentSpacing{
+
+margin-bottom: 30px;
+
+}
+
+
+.contentArea{
+
+margin: auto;
+min-width: auto;
+min-height: 500px;
 
 
 }
 
-.menuTable {
+.itemForm{
 
-  width: 33%;
+text-align: left;
+/* padding: 12px 20px; 
+margin: 8px 0;
+
+}
 
 
 
-} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ */

@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Col, FormGroup, Label, Input } from 'reactstrap';
 import { Container} from 'react-bootstrap';
 
 export class Search extends React.Component {
@@ -8,15 +8,16 @@ export class Search extends React.Component {
 
     return (
       <Container className="contentSpacing">
-        <center>
-          <select className="padding">
-            <option value="name">Name</option>
-            <option value="location">Location</option>
-            <option value="Price">Price</option>
-
-          </select>
-          <input type="text" placeholder="Search.." className="padding" />
-        </center>
+        
+          <FormGroup row>
+            <Col sm="1"></Col>
+        <Label sm={2}>Search</Label>
+        <Col sm={8}>
+          <Input type="search" name="search" id="search" placeholder="Baked Potato..." />
+        </Col>
+        <Col sm="1"></Col>
+      </FormGroup>
+       
       </Container>);
   }
 
