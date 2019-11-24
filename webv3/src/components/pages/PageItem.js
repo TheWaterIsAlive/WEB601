@@ -2,13 +2,22 @@ import React from 'react'
 import { ContentArea } from './ContentArea.js'
 import { AddMenuItem } from './parts/addmenuItem'
 import { Menuitem } from "./parts/menuitem";
+import { connect } from "react-redux";
 
-const PageItem = () => {
+const mapStateToProps = state => {
+    return { loggedIn: state.loggedIn }
+}
+
+
+
+const PageItem = ({loggedIn}) => {
     return (
         <div>
-            <ContentArea items={<Menuitem />} snapIn={<div><AddMenuItem /></div>} />
+            <ContentArea items={<Menuitem />} snapIn={<div><AddMenuItem loginStatus={loggedIn} /></div>} />
         </div>
     );
 }
 
-export default PageItem
+const connectedPageItem = connect(mapStateToProps)(PageItem);
+
+export default connectedPageItem;

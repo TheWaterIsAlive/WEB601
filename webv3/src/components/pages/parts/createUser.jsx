@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Col, Button, Form, FormGroup, Label, Input} from 'reactstrap';
 export class CreateUser extends React.Component {
 
 
@@ -16,9 +16,9 @@ export class CreateUser extends React.Component {
             method: 'post',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
-                "username": this.username.value,
-                "accountPassword": this.accountPassword.value,
-                "email": this.email.value
+                "username": this.regUsername.value,
+                "accountPassword": this.regPassword.value,
+                "email": this.regEmail.value
             })
         });
         console.log("User added");
@@ -29,26 +29,45 @@ export class CreateUser extends React.Component {
 
 
         return (
-            <div className="menuSnapIn">
-
-
-                <form onSubmit={this.handleSubmit}>
-                    <label>
-                        Username:
-                    <input ref={(ref) => { this.username = ref }} type="text" id="username" name="username" autocomplete="off" />
-                    </label><br></br>
-                    <label>
-                        Account Password:
-                    <input ref={(ref) => { this.accountPassword = ref }} type="text" id="accountPassword" name="accountPassword" autocomplete="off" />
-                    </label><br></br>
-                    <label>
-                        Email:
-                    <input ref={(ref) => { this.email = ref }} type="text" id="email" name="email" autocomplete="off" />
-                    </label><br></br>
-
-                    <input type="submit" id="Submit" />
-                </form>
-            </div>
+            <Form onSubmit={this.handleSubmit}>
+            <FormGroup>
+                <Col>
+                <h2>Please Enter Details!</h2>
+                </Col>
+            </FormGroup>
+        <FormGroup row>
+          <Label sm={2}>Username</Label>
+          <Col sm={10}>
+            <Input ref={(ref) => { this.regUsername = ref }} type="username" name="username" id="regUsername" placeholder="e.g. Greg123" />
+          </Col>
+        </FormGroup>
+        <FormGroup row>
+          <Label sm={2}>Password</Label>
+          <Col sm={10}>
+            <Input ref={(ref) => { this.regPassword = ref }} type="password" name="password" id="regPassword" placeholder="**************" />
+          </Col>
+        </FormGroup>
+        <Col md={6}>
+        <FormGroup row>
+          <Label sm={2}>Email</Label>
+          <Col sm={10}>
+            <Input ref={(ref) => { this.regEmail = ref }} type="email" name="email" id="regEmail" placeholder="test-test@gmail.com" />
+          </Col>
+        </FormGroup>
+        <FormGroup>
+         
+            <Button>Create Account</Button>
+          
+        </FormGroup>
+        </Col>
+        <Col md={6}>
+        <FormGroup>
+        {/* <input type="submit" className="btn" id="Submit"/> */}
+            {/* <Button onClick={this.handleClick}>Register</Button> */}
+       
+        </FormGroup>
+        </Col>
+      </Form>
 
         )
     }

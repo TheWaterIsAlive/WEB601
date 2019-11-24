@@ -1,23 +1,50 @@
+import {
+  ADD_USER,
+  ATTEMPT_LOGIN,
+  SWITCH_LOGIN
+} from "../constants/action-types";
 
-// import { ADD_USER } from "../constants/action-types";
+const initialState = {
+  users: [],
+  loggedIn: false,
+  logInPanel: true
 
-// const initialState = {
-//     user: []
-
-// };
+};
 
 
 
-// function rootReducer(state = initialState, action){
+function rootReducer(state = initialState, action) {
+  
+  console.log(action);
+  if (action.type === ADD_USER) {
+    return Object.assign({}, state, {
+      users: state.users.concat(action.payload)
+    });
+  }
+  else if (action.type === ATTEMPT_LOGIN) {
+    return Object.assign({}, state, {
+      loggedIn: true
+    });
 
-// if (action.type === ADD_USER) {
+  } 
+  else if (action.type === SWITCH_LOGIN) {
+  
+    if (action.payload === true) {
+      return Object.assign({}, state, {
+        logInPanel: false
+      })
+    } 
+    else {
+      return Object.assign({}, state, {
+          logInPanel: true
+        })
+      }
 
-//     return Object.assign({} state, {
-//         user: state.user.concat(action.payload) });
-   
-// }
 
-//     return state;
-// }
 
-// export default rootReducer;
+    };
+  
+  return state;
+}
+
+export default rootReducer;
