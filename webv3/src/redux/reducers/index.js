@@ -1,13 +1,15 @@
 import {
   ADD_USER,
   ATTEMPT_LOGIN,
-  SWITCH_LOGIN
+  SWITCH_LOGIN,
+  LOGIN
 } from "../constants/action-types";
 
 const initialState = {
-  users: [],
+  users: "",
   loggedIn: false,
-  logInPanel: true
+  logInPanel: true,
+  
 
 };
 
@@ -41,6 +43,14 @@ function rootReducer(state = initialState, action) {
       }
 
 
+
+    }
+    else if (action.type === LOGIN){
+      return Object.assign({}, state, {
+      
+        loggedIn: true,
+        users: action.username
+      })
 
     };
   
