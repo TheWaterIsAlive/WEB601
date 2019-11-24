@@ -1,11 +1,23 @@
-
+// import {store} from "../../redux/store/index";
+// //import connect from "react-redux";
+// import { LOGIN } from "../../redux/constants/action-types";
 //Function 1 Gets a List of all of the records in the usertable
 //Function 2 Get a single record basied on a primary key
 //Function 3 Create a new record and inforces mandatory fields
 //Function 4 Updates a record based on a Username
 //Function 5 Deletes a record based on a USername
 
+// const mapDispatchToProps = (dispatch) => {
+//     return {
 
+//         login: (usersName) => {
+
+//             dispatch({type: LOGIN, payload: usersName})
+
+//         }
+     
+//     };
+//   }
 
 
 //List users for administration purposes
@@ -70,7 +82,8 @@ function postUserKnex(req, res) {
             .insert(payload)
             .then(response => {
                 if (response) {
-                    res.status(201).json('User item record created')
+                    res.status(201).json('User item record created');
+                    // store.dispatch(logIn({username}));
                 }
             })
             .catch(error => res.status(500).json(error))
@@ -125,6 +138,8 @@ function deleteUserKnex(req, res) {
 }
 
 
+
+// const ConnectedAddUser = connect(null, mapDispatchToProps)(postUserKnex);
 module.exports = {  //This are allows for the funtions of this file to be exported and use in other files.
     getAllUserKnex,
     getSingleUserKnex,

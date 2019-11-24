@@ -1,9 +1,11 @@
 import React from 'react';
-
+//import { connect } from "react-redux";
+import ConnectedLoginRegistration from "./loginRegistration"
+// import { Col, Button, Form, FormGroup, Label, Input} from 'reactstrap';
 export class AddMenuItem extends React.Component {
 
-
-
+    
+     
     constructor() {
         super();
         this.handleSubmit = this.handleSubmit.bind(this); //Binds button press so that the front knows what is going 
@@ -44,7 +46,13 @@ export class AddMenuItem extends React.Component {
 
     render() {
 
+            if(this.props.loginStatus === false){
+                return(
+                   <ConnectedLoginRegistration></ConnectedLoginRegistration>
+                )
 
+            }
+            else{
         return (
             <div className="menuItemBox ">
                  {/* a class made to make UI elements reuseable */}
@@ -112,6 +120,7 @@ export class AddMenuItem extends React.Component {
             </div>
 
         )
+    }
     }
 }
 
