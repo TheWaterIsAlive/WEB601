@@ -14,12 +14,12 @@ const PageSearch = () => {
             
             <AdvanceSearch />
             <Row>
-                <Col xs="3"></Col>
-            <Col xs="6">
+                <Col sm="1" md="3"></Col>
+            <Col sm="10" md="6">
                 <SearchArea items={<Menuitem />}></SearchArea>
                 {/* <ContentSpace children={Menuitem} /> */}
             </Col>
-            <Col xs="3"></Col>
+            <Col sm="1" md="3"></Col>
 
             </Row>
             </Container>

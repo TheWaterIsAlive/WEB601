@@ -1,6 +1,6 @@
 import React from 'react'
 import { ContentArea } from './ContentArea.js'
-import { AddMenuItem } from './parts/addmenuItem'
+import { AddMenuItem } from './parts/forms/addmenuItem'
 import { Menuitem } from "./parts/menuitem";
 import { connect } from "react-redux";
 
