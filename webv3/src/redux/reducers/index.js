@@ -39,6 +39,12 @@ function rootReducer(state = initialState, action) {
       })
     } 
 
+    
+    else {
+      return Object.assign({}, state, {
+          logInPanel: true
+        })
+      }
     }
     else if (action.type === LOGIN){
       return Object.assign({}, state, {
@@ -48,11 +54,7 @@ function rootReducer(state = initialState, action) {
       })
 
     }
-    else {
-      return Object.assign({}, state, {
-          logInPanel: true
-        })
-      };
+   ;
   
   return state;
 }
