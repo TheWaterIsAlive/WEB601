@@ -1,0 +1,15 @@
+
+{
+
+"menuItem":{
+    "itemID": "int",
+    "menuID": "int", 
+    "itemName": "string",
+    "itemDescription": "string", 
+    "itemCost": "int"
+
+
+}
+
+
+}
