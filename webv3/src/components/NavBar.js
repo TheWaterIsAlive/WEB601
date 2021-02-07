@@ -6,10 +6,10 @@ const NavBar = () => {
   // Standard Navbar from reactstrap page
 
   const [isOpen, setIsOpen] = useState(false);
-  //Checks to see if Nav bar should be expained
+  // Checks to see if Nav bar should be expained
 
   const toggle = () => setIsOpen(!isOpen);
-  //Adds funtionality to the toggle button
+  // Adds funtionality to the toggle button
 
   return (
     <Navbar light expand="md" className="navRow">

@@ -8,7 +8,7 @@ import "./forms.css";
 const mapStateToProps = (state) => {
   return { logInPanel: state.logInPanel };
 };
-//Loads the state of the panel from the redux store
+// Loads the state of the panel from the redux store
 
 const mapDispatchToProps = (dispatch) => {
   return {
@@ -20,7 +20,7 @@ const mapDispatchToProps = (dispatch) => {
     },
   };
 };
-//Loads the reducers from the action class and sets them to funtions.
+// Loads the reducers from the action class and sets them to funtions.
 
 class loginRegistration extends Component {
   constructor(props) {
@@ -33,7 +33,7 @@ class loginRegistration extends Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  //Stores the input feilds values and bind handlers to the correct button
+  // Stores the input feilds values and bind handlers to the correct button
 
   handleSubmit(event) {
     event.preventDefault();
@@ -54,13 +54,13 @@ class loginRegistration extends Component {
         console.log(err);
       });
   }
-  //Gets a spicific user.
-  //If the user has the correct password loggin is preformed and the state is updated.
+  // Gets a spicific user.
+  // If the user has the correct password loggin is preformed and the state is updated.
 
   handleChange(event) {
     event.preventDefault();
     this.setState({ [event.target.id]: event.target.value });
-    //This funtion takes the id of an input feild and compairs it to the name of the states validles and then changes them accordingly.
+    // This funtion takes the id of an input feild and compairs it to the name of the states validles and then changes them accordingly.
   }
 
   handleClick = () => {

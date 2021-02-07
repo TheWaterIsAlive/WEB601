@@ -30,13 +30,13 @@ export class CreateUser extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleClick = this.handleClick.bind(this);
   }
-  //The state hold the value of the input feilds in the form so they can be easierly worked with
-  //The bind area makes sure that the component knows to uses it's own funtions
+  // The state hold the value of the input feilds in the form so they can be easierly worked with
+  // The bind area makes sure that the component knows to uses it's own funtions
 
   handleClick = () => {
     this.props.swicthPanels(this.props.logInPanel);
   };
-  //On Click runs the redux statement to switch panels
+  // On Click runs the redux statement to switch panels
 
   handleSubmit(event) {
     event.preventDefault();
@@ -65,14 +65,14 @@ export class CreateUser extends React.Component {
 
     console.log("User added");
   }
-  //An api call which trys and creates a new user.
-  //If the call works and receieves the correct message it preforms the login code
+  // An api call which trys and creates a new user.
+  // If the call works and receieves the correct message it preforms the login code
 
   handleChange(event) {
     event.preventDefault();
     this.setState({ [event.target.id]: event.target.value });
   }
-  //This funtion takes the id of an input feild and compairs it to the name of the states validles and then changes them accordingly.
+  // This funtion takes the id of an input feild and compairs it to the name of the states validles and then changes them accordingly.
 
   render() {
     return (

@@ -73,6 +73,7 @@ export class Menuitem extends React.Component {
 
         {/* Maps menu items so they can all be rendered */}
         {this.state.items.map((menuItem) => (
+          // eslint-disable-next-line react/jsx-key
           <MenuPanel parentCallback={this.selectID} data={menuItem} edit="False" />
         ))}
         {/* <input type="submit" id='Submit'></input> */}

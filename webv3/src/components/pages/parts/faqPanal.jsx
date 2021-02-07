@@ -1,8 +1,14 @@
+/* eslint-disable react/prop-types */
 import React from "react";
-
 import { Container, Row, Col } from "react-bootstrap";
 
+
+
+
+
+
 export const FaqPanal = (props) => {
+  
   return (
     <Container className="faqBox">
       <Row>

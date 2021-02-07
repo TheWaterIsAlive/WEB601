@@ -1,15 +1,17 @@
+/* eslint-disable react/prop-types */
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
 export class MenuPanel extends React.Component {
   constructor(props) {
-    //Has infomration past in as a props so that the component can use it
+    // Has infomration past in as a props so that the component can use it
     super(props);
     this.state = {
       isFetching: false,
       thisID: props.itemID,
     };
   }
+
   deleteItem() {
     // Sets up the ability to set up there  submint button events
     // event.preventDefault();
