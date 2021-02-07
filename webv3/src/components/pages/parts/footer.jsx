@@ -1,19 +1,14 @@
-import React from 'react';
+import React from "react";
 
-import { Container, Row, Col } from 'react-bootstrap';
-
-
+import { Container, Row, Col } from "react-bootstrap";
 
 export class Footer extends React.Component {
-
   render() {
-
     return (
       <Container>
         <Row>
           <Col className="footer">
-            <p className="footer">
-            </p>
+            <p className="footer"></p>
           </Col>
         </Row>
       </Container>
@@ -22,4 +17,3 @@ export class Footer extends React.Component {
 }
 
 export default Footer;
-

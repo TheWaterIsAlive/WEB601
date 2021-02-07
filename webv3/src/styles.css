@@ -1,228 +1,174 @@
-
-/*===========================Page===============================*/
-.pageStyling{
-
-  background-color: #BFBFBF;
-  color: #000000;
-  font-family: 'Times New Roman', Times, serif;
-  padding: 0px;
-  
-  }
-  @media only screen and (max-width: 250px) {
-  .pageStyling{
-
-    background-color: #BFBFBF;
-    color: #000000;
-    font-family: 'Times New Roman', Times, serif;
-    padding: 0px;
+/* ===========================Page=============================== */
+.pageStyling {
+  background-color: #bfbfbf;
+  color: #000;
+  font-family: "Times New Roman", Times, serif;
+  padding: 1px;
+}
+@media only screen and (max-width: 250px) {
+  .pageStyling {
+    background-color: #bfbfbf;
+    color: #000;
+    font-family: "Times New Roman", Times, serif;
+    padding: 1px;
     margin: 0%;
-    
-    }
   }
-  
-/*===========================Page===============================*/
+}
 
-/*===========================Header===============================*/
+/* ===========================Page=============================== */
+
+/* ===========================Header============================= */
 .header {
-
   height: 300px;
   width: 100%;
-
-
 }
 
-
-.headerStyling{
-background-color: #909090;
-padding: 0px;
-text-align: center;
-
+.headerStyling {
+  background-color: #909090;
+  padding: 1px;
+  text-align: center;
 }
 
-h1.headerStyling{
-
-
+h1.headerStyling {
   font-size: 700%;
 }
 
-
 @media only screen and (max-width: 600px) {
   .header {
-
     height: 200px;
     width: 100%;
-  
-  
   }
-  h1.headerStyling{
-
-
+  h1.headerStyling {
     font-size: 300%;
   }
-  
-
-
 }
 
-/*===========================Header===============================*/
-/*===========================Reactive===============================*/
+/* ===========================Header=============================== */
+
+/* ===========================Reactive=============================== */
 @media only screen and (max-width: 600px) {
-.mobile{
-
-  display: none;
-}
+  .mobile {
+    display: none;
+  }
 }
 @media only screen and (min-width: 600px) {
-.desktop{
-  display: none;
+  .desktop {
+    display: none;
+  }
 }
-}
-/*===========================Reactive===============================*/
 
+/* ===========================Reactive=============================== */
 
-/*===========================Nav===============================*/
-.navCol{
+/* ===========================Nav=============================== */
+.navCol {
   /* background-color: #212121; */
   padding: 10px;
   margin-left: 10px;
   margin-right: 10px;
   height: 100%;
   min-width: 75px;
+}
 
-  
-  }
-  
-  
-  .navLink{
-  
+.navLink {
   text-decoration: none;
-  color: #BFBFBF;
+  color: #bfbfbf;
   text-align: center;
-  
-  
-  }
-  
-  .navRow{
-  
-  background-color: #6B6B6B;
-    padding: 0%;
-    padding-bottom: 7px;
-    margin: 0%;
-  }
-  
-  
+}
 
-/*===========================Nav===============================*/
-/*===========================Menu Item===============================*/
+.navRow {
+  background-color: #6b6b6b;
+  padding: 0%;
+  padding-bottom: 7px;
+  margin: 0%;
+}
+
+/* ===========================Nav=============================== */
+
+/* ===========================Menu Item=============================== */
 
 .menuItem {
   margin-top: 4px;
   margin-bottom: 10px;
   background-color: #adceed;
-  padding: 10% ;
+  padding: 10%;
   height: auto;
   border-style: solid;
   border: #909090;
   width: 100%;
   text-align: left;
- 
-
 }
 
-
-
-
-.menuItemBox{
-background-color: #6b6b6b;
-padding: 0%;
-margin: 0%;
-padding-bottom: 30px;
-height: 100%;
-
-
+.menuItemBox {
+  background-color: #6b6b6b;
+  padding: 0%;
+  margin: 0%;
+  padding-bottom: 30px;
+  height: 100%;
 }
 
-
-.menuItemTitle{
-
+.menuItemTitle {
   background-color: #adceed;
- padding: 0%;
- margin: 0%;
+  padding: 0%;
+  margin: 0%;
   font-style: oblique;
   align-content: center;
-
 }
 
-
-.menuFoodName{
-
+.menuFoodName {
   font-size: large;
-
 }
-
 
 @media only screen and (max-width: 600px) {
-.menuFoodName{
-
-  font-size: small;
-
+  .menuFoodName {
+    font-size: small;
+  }
 }
-}
-.menuItemImg{
-
+.menuItemImg {
   width: 100%;
   height: 100%;
   max-height: 200px;
-  }
+}
 
+/* ===========================Menu Item=============================== */
 
-/*===========================Menu Item===============================*/
-
-
-/*===========================Footer===============================*/
-
+/* ===========================Footer=============================== */
 
 .footer {
   clear: both;
   background-color: #909090;
-  color: #BFBFBF;
+  color: #bfbfbf;
   text-align: center;
   height: 100px;
   width: 100%;
-  margin-bottom: 0px;
-
+  margin-bottom: 1px;
 }
-/*===========================Footer===============================*/
 
-/*===========================FAQ===============================*/
-.faqBox{
+/* ===========================Footer=============================== */
 
- 
+/* ===========================FAQ=============================== */
+.faqBox {
   margin-bottom: 10px;
   background-color: #adceed;
-  padding: 10px ;
+  padding: 10px;
   height: auto;
   border-style: solid;
   border: #909090;
   width: 100%;
   text-align: center;
- 
-
 }
 
-/*===========================FAQ===============================*/
+/* ===========================FAQ=============================== */
 
-
-
-/* ==========================Slide CSS=========================*/
-
+/* ==========================Slide CSS========================= */
 
 .slide-container {
   width: 70%;
-  margin: auto; }
+  margin: auto;
+}
 
 h3 {
-  text-align: center; }
+  text-align: center;
+}
 
 .each-slide > div {
   display: flex;
@@ -261,42 +207,30 @@ h3 {
   background: #adceed;
 }
 
-.lineUp{
-
+.lineUp {
   display: inline-block;
-
 }
-span.lineUp{
-
- float: top;
-
+span.lineUp {
+  float: top;
 }
 
+/* ==========================Slide CSS========================= */
 
-/* ==========================Slide CSS=========================*/
+/* ==========================Forms========================= */
 
-/* ==========================Forms=========================*/
-
-
-
-.formTitle{
-
-  color: BFBFBF;
+.formTitle {
+  color: bfbfbf;
   background-color: #adceed;
   font-size: large;
-
 }
 
-.formBox{
-
-background-color: #909090;
-color: BFBFBF;
-
+.formBox {
+  background-color: #909090;
+  color: bfbfbf;
 }
 
+/* ==========================Forms========================= */
 
-
-/* ==========================Forms=========================*/
 /* 
 
 .contentSpacing{
