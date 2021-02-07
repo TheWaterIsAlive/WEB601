@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const port = 3000;
+// const port = 3000;
 const bodyParser = require("body-parser");
 
 // This file is for testing purposes and is no part of the program.
@@ -29,7 +29,7 @@ app.use(
 
 app.get("/bussnesses", async (req, res) => {
   try {
-    let bussness = await knex("bussnesses");
+    const bussness = await knex("bussnesses");
     res.json(bussness);
   } catch (e) {
     console.log(e);
@@ -38,9 +38,10 @@ app.get("/bussnesses", async (req, res) => {
 
 app.post("/bussnesses", async (req, res) => {
   try {
-    let bussnessName = req.body.bussnessName;
-    let address = req.body.address;
-    let id = await knex("bussnesses").insert({
+    const bussnessName = req.body.bussnessName;
+    const address = req.body.address;
+    // eslint-disable-next-line no-unused-vars
+    const id = await knex("bussnesses").insert({
       bussnessName: bussnessName,
       address: address,
     });
@@ -50,15 +51,16 @@ app.post("/bussnesses", async (req, res) => {
     });
   } catch (e) {
     console.log(e);
+    // eslint-disable-next-line no-undef
     next(e);
   }
 });
 
 app.put("/bussnesses/:name", async (req, res) => {
   try {
-    let name = req.params.name;
-    let bussnessName = req.body.bussnessName;
-    let address = req.body.address;
+    const name = req.params.name;
+    const bussnessName = req.body.bussnessName;
+    const address = req.body.address;
 
     await knex("bussnesses").where("bussnessName", name).update({
       address: address,
@@ -70,13 +72,14 @@ app.put("/bussnesses/:name", async (req, res) => {
     });
   } catch (e) {
     console.log(e);
+    // eslint-disable-next-line no-undef
     next(e);
   }
 });
 
 app.delete("/bussnesses/:name", async (req, res) => {
   try {
-    let name = req.params.name;
+    const name = req.params.name;
 
     await knex("bussnesses").where("bussnessName", name).del();
     res.json({
@@ -84,6 +87,7 @@ app.delete("/bussnesses/:name", async (req, res) => {
     });
   } catch (e) {
     console.log(e);
+    // eslint-disable-next-line no-undef
     next(e);
   }
 });

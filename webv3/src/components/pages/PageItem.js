@@ -8,6 +8,7 @@ const mapStateToProps = (state) => {
   return { loggedIn: state.loggedIn };
 };
 
+// eslint-disable-next-line react/prop-types
 const PageItem = ({ loggedIn }) => {
   return (
     <div>

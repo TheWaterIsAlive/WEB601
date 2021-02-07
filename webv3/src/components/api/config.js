@@ -1,7 +1,7 @@
-const APIServerPort = 4200; //Sets up the port which will be used by the servers api/backend
+const APIServerPort = 4200; // Sets up the port which will be used by the servers api/backend
 
 const database = {
-  //Creates a connection to the database and provides the information need to connect to that database
+  // Creates a connection to the database and provides the information need to connect to that database
 
   host: "localhost",
   port: 3306,
@@ -12,6 +12,6 @@ const database = {
 };
 
 module.exports = {
-  database, //Exports the connection to the database
+  database, // Exports the connection to the database
   APIServerPort, // Export the choosen port so other files can use it
 };

@@ -1,4 +1,4 @@
-//This class is not commonly used
+// This class is not commonly used
 
 function getAllMenuKnex(req, res) {
   const { knex } = req.app.locals;
@@ -10,10 +10,10 @@ function getAllMenuKnex(req, res) {
     .catch((error) => res.status(500).json(error));
 }
 
-//This funtion is occasionally used to find the relationship between menu items and bussnesses
+// This funtion is occasionally used to find the relationship between menu items and bussnesses
 function getSingleMenuKnex(req, res) {
   const { knex } = req.app.locals;
-  const { id } = req.params;
+  // const { id } = req.params;
   knex
     .select("bussnessName", "address")
     .from("bussnesses")
@@ -25,7 +25,7 @@ function getSingleMenuKnex(req, res) {
     .catch((error) => res.status(500).json(error));
 }
 
-//Used mostly when a new bussness is created
+// Used mostly when a new bussness is created
 function postMenuKnex(req, res) {
   const { knex } = req.app.locals;
 

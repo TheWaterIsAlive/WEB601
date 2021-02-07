@@ -1,11 +1,11 @@
 // import {store} from "../../redux/store/index";
 // //import connect from "react-redux";
 // import { LOGIN } from "../../redux/constants/action-types";
-//Function 1 Gets a List of all of the records in the usertable
-//Function 2 Get a single record basied on a primary key
-//Function 3 Create a new record and inforces mandatory fields
-//Function 4 Updates a record based on a Username
-//Function 5 Deletes a record based on a USername
+// Function 1 Gets a List of all of the records in the usertable
+// Function 2 Get a single record basied on a primary key
+// Function 3 Create a new record and inforces mandatory fields
+// Function 4 Updates a record based on a Username
+// Function 5 Deletes a record based on a USername
 
 // const mapDispatchToProps = (dispatch) => {
 //     return {
@@ -19,7 +19,7 @@
 //     };
 //   }
 
-//List users for administration purposes
+// List users for administration purposes
 function getAllUserKnex(req, res) {
   const { knex } = req.app.locals;
   knex
@@ -32,7 +32,7 @@ function getAllUserKnex(req, res) {
         which the is displayied to the user */
     .then((data) => res.status(200).json(data))
     .catch((error) => res.status(500).json(error));
-} /*The 500 messages are error messages and this 
+} /* The 500 messages are error messages and this 
         provides an error message when it is displayed */
 
 function getSingleUserKnex(req, res) {
@@ -42,7 +42,7 @@ function getSingleUserKnex(req, res) {
     .select("username", "accountPassword", "email", "bussnessName")
     .from("users")
     .where({
-      username: `${name}`, //This is the imput which lets the database find the specifid record is managed
+      username: `${name}`, // This is the imput which lets the database find the specifid record is managed
     })
 
     /* Provides feedback on the resaults of 
@@ -51,7 +51,7 @@ function getSingleUserKnex(req, res) {
         which the is displayied to the user */
     .then((data) => res.status(200).json(data))
     .catch((error) => res.status(500).json(error));
-} /*The 500 messages are error messages and this 
+} /* The 500 messages are error messages and this 
         provides an error message when it is displayed */
 
 function postUserKnex(req, res) {
@@ -116,7 +116,7 @@ function deleteUserKnex(req, res) {
 
 // const ConnectedAddUser = connect(null, mapDispatchToProps)(postUserKnex);
 module.exports = {
-  //This are allows for the funtions of this file to be exported and use in other files.
+  // This are allows for the funtions of this file to be exported and use in other files.
   getAllUserKnex,
   getSingleUserKnex,
   postUserKnex,

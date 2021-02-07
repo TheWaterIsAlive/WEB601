@@ -7,7 +7,7 @@ export const SearchArea = (props) => (
     <Row className="contentSpacing">
       <Col xs="12">
         {/* Sets up the column to display menu items */}
-        {props.items}
+        {/* {props.items} */}
       </Col>
     </Row>
   </Container>

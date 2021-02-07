@@ -7,12 +7,12 @@ export const ContentArea = (props) => (
     <Row className="contentSpacing">
       <Col xs="12" md="6">
         {/* Sets up the column to display menu items */}
-        {props.items}
+        {/* {props.items} */}
       </Col>
       {/* <Col xs="2"></Col> */}
 
       <Col xs="12" md="6">
-        {props.snapIn}
+        {/* {props.snapIn} */}
         {/* Allows any set of editing tools to be loaded at once */}
       </Col>
     </Row>

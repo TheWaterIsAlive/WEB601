@@ -1,10 +1,10 @@
-//Function 1 Gets a List of all of the records in the menu item table
-//Function 2 Get a single record basied on a primary key
-//Function 3 Create a new record and inforces mandatory fields
-//Function 4 Updates a record based on an ID
-//Function 5 Deletes a record based on ID
+// Function 1 Gets a List of all of the records in the menu item table
+// Function 2 Get a single record basied on a primary key
+// Function 3 Create a new record and inforces mandatory fields
+// Function 4 Updates a record based on an ID
+// Function 5 Deletes a record based on ID
 
-//This is used to list all of the menu item
+// This is used to list all of the menu item
 function getAllMenuItemKnex(req, res) {
   const { knex } = req.app.locals;
   knex
@@ -24,7 +24,7 @@ function getAllMenuItemKnex(req, res) {
       "allergenCondentions",
       "image"
     )
-    .from("menuItem") //This decides what table the columns will be selected from
+    .from("menuItem") // This decides what table the columns will be selected from
 
     /* Provides feedback on the resaults of 
         the queary the 200 messages are a sign of success 
@@ -32,7 +32,7 @@ function getAllMenuItemKnex(req, res) {
         which the is displayied to the user */
     .then((data) => res.status(200).json(data))
     .catch((error) => res.status(500).json(error));
-} /*The 500 messages are error messages and this 
+} /* The 500 messages are error messages and this 
         provides an error message when it is displayed */
 
 function getSingleMenuItemKnex(req, res) {
@@ -56,7 +56,7 @@ function getSingleMenuItemKnex(req, res) {
     )
     .from("menuItem")
     .where({
-      itemID: `${id}`, //This is the imput which lets the database find the specifid record is managed
+      itemID: `${id}`, // This is the imput which lets the database find the specifid record is managed
     })
 
     /* Provides feedback on the resaults of 
@@ -65,7 +65,7 @@ function getSingleMenuItemKnex(req, res) {
         which the is displayied to the user */
     .then((data) => res.status(200).json(data))
     .catch((error) => res.status(500).json(error));
-} /*The 500 messages are error messages and this 
+} /* The 500 messages are error messages and this 
         provides an error message when it is displayed */
 
 function postMenuItemKnex(req, res) {
@@ -78,8 +78,8 @@ function postMenuItemKnex(req, res) {
     "itemName",
     "itemDescription",
     "itemCost",
-  ]; //A User must fill these fields,
-  //the field which are important to the sites funtinalities and users experience.
+  ]; // A User must fill these fields,
+  // the field which are important to the sites funtinalities and users experience.
   const payloadKeys = Object.keys(payload);
   const mandatoryColumnsExists = mandatoryColumns.every((mc) =>
     payloadKeys.includes(mc)
