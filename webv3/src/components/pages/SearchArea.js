@@ -1,23 +1,15 @@
-import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
-
-
-
+import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
 
 export const SearchArea = (props) => (
-
-
-// Has other companents passed into it
+  // Has other companents passed into it
   <Container className="contentArea">
     <Row className="contentSpacing">
-      <Col xs="12"> 
-      {/* Sets up the column to display menu items */}
+      <Col xs="12">
+        {/* Sets up the column to display menu items */}
         {props.items}
- 
       </Col>
-
     </Row>
   </Container>
-
-)
-export default SearchArea
+);
+export default SearchArea;

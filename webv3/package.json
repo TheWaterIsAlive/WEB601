@@ -47,15 +47,13 @@
     "stylelint": "^13.9.0",
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-standard": "^20.0.0"
-  }, 
-  
-    "lint-staged": {
-      "**/*": "prettier --write --ignore-unknown"
-    },
-    "husky": {
-      "hooks": {
-        "pre-commit": "lint-staged"
-      }
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
     }
-  
+  }
 }
