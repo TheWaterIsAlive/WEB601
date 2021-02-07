@@ -4,7 +4,7 @@ import { Form, Label, Input } from "reactstrap";
 export class AddMenuItem extends React.Component {
   constructor() {
     super();
-    this.handleSubmit = this.handleSubmit.bind(this); //Binds button press so that the front knows what is going
+    this.handleSubmit = this.handleSubmit.bind(this); // Binds button press so that the front knows what is going
   }
 
   handleSubmit(event) {
@@ -12,11 +12,11 @@ export class AddMenuItem extends React.Component {
     event.preventDefault();
 
     const confirmable = window.fetch("http://localhost:4200/api/menuItem/", {
-      //A promise which trys and gets to the database through routes
-      method: "post", //The type of action this event preforms
+      // A promise which trys and gets to the database through routes
+      method: "post", // The type of action this event preforms
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        //creates a list of string so the infomration can be later displayed
+        // creates a list of string so the infomration can be later displayed
         menuID: this.menuID.value,
         itemName: this.itemName.value,
         itemDescription: this.itemDescription.value,
@@ -35,17 +35,17 @@ export class AddMenuItem extends React.Component {
     confirmable
       .then((response) => response.json())
       .then((json) => {
-        window.location.reload(); //Completes the promies and reloads the page after the connection is complete
+        window.location.reload(); // Completes the promies and reloads the page after the connection is complete
       });
 
-    console.log("Menu Item added"); //Logs some infomraton as a security messer
+    console.log("Menu Item added"); // Logs some infomraton as a security messer
   }
 
   render() {
     if (this.props.loginStatus === false) {
       return <ConnectedLoginRegistration></ConnectedLoginRegistration>;
     }
-    //If a user is not log in they are instead show a form to register or log in.
+    // If a user is not log in they are instead show a form to register or log in.
     else {
       return (
         <div className="menuItemBox ">

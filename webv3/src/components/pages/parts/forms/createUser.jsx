@@ -8,7 +8,7 @@ const mapDispatchToProps = (dispatch) => {
     swicthPanels: (newPanel) => {
       dispatch({ type: SWITCH_LOGIN, payload: newPanel });
     },
-    //This reducer switchs which panel the users is seeing by changing state
+    // This reducer switchs which panel the users is seeing by changing state
 
     loggingIN: (user) => {
       dispatch({ type: LOGIN, payload: user });

@@ -10,9 +10,9 @@ const initialState = {
   loggedIn: false,
   logInPanel: true,
 };
-//users is the username of the current log in user
-//login is if the user is logged in
-//log in panel is what sort of panel should be displayed
+// users is the username of the current log in user
+// login is if the user is logged in
+// log in panel is what sort of panel should be displayed
 
 function rootReducer(state = initialState, action) {
   console.log(action);
@@ -43,10 +43,10 @@ function rootReducer(state = initialState, action) {
   return state;
 }
 
-//1 Adds a user
-//2 trys to log in
-//3 switchs between two panels
-//4 Preforms log in funtions
-//5 Is the error/default action
+// 1 Adds a user
+// 2 trys to log in
+// 3 switchs between two panels
+// 4 Preforms log in funtions
+// 5 Is the error/default action
 
 export default rootReducer;

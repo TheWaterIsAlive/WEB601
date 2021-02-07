@@ -1,11 +1,11 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { MenuPanel } from "./menuPanel";
-//import { DeleteMenuItem } from './deleteMenuItem';
+// import { DeleteMenuItem } from './deleteMenuItem';
 
 export class Menuitem extends React.Component {
   constructor(props) {
-    //Has infomration past in as a props so that the component can use it
+    // Has infomration past in as a props so that the component can use it
     super(props);
     this.state = {
       isFetching: false,
@@ -25,7 +25,7 @@ export class Menuitem extends React.Component {
           });
         } else {
           this.setState({
-            isFetching: true, //Gets all menu items from the menuItem table and stores them in the items state
+            isFetching: true, // Gets all menu items from the menuItem table and stores them in the items state
             items: data,
           });
         }
@@ -36,7 +36,7 @@ export class Menuitem extends React.Component {
   }
 
   componentDidMount() {
-    this.GetMenuItem(); //Get array of items one the comonent is successfully mounted
+    this.GetMenuItem(); // Get array of items one the comonent is successfully mounted
   }
 
   // handleSubmit(event) {// Sets up the ability to set up there  submint button events
@@ -73,11 +73,7 @@ export class Menuitem extends React.Component {
 
         {/* Maps menu items so they can all be rendered */}
         {this.state.items.map((menuItem) => (
-          <MenuPanel
-            parentCallback={this.selectID}
-            data={menuItem}
-            edit="False"
-          ></MenuPanel>
+          <MenuPanel parentCallback={this.selectID} data={menuItem} edit="False" />
         ))}
         {/* <input type="submit" id='Submit'></input> */}
       </Container>

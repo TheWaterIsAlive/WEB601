@@ -7,7 +7,7 @@ export function addUser(payload) {
   };
 }
 
-//Passes the correct informations to have the reducers record a user
+// Passes the correct informations to have the reducers record a user
 
 export function logIn(payload) {
   return {
@@ -16,7 +16,7 @@ export function logIn(payload) {
   };
 }
 
-//Passes the correct informations to have the reducers set the user to be logged in and stores the users name
+// Passes the correct informations to have the reducers set the user to be logged in and stores the users name
 export function switchLogIn(payload) {
   return {
     type: SWITCH_LOGIN,
@@ -24,4 +24,4 @@ export function switchLogIn(payload) {
   };
 }
 
-//Passes the correct informations to have the reducers to swith between two panels
+// Passes the correct informations to have the reducers to swith between two panels
