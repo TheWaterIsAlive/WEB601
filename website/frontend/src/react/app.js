@@ -1,14 +1,14 @@
 import React from "react";
 import { BrowserRouter, Route } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
-import PageMenu from "./pages/PageMenu";
-import PageSearch from "./pages/PageSearch";
-import connectedPageItem from "./pages/PageItem";
-import PageFAQ from "./pages/PageFAQ";
-import PageMain from "./pages/PageMain";
-import NavBar from "./NavBar";
-import { Header } from "./pages/parts/header.jsx";
-import { Footer } from "./pages/parts/footer";
+import PageMenu from "./PageMenu/PageMenu";
+import PageSearch from "./PageSearch/PageSearch";
+import connectedPageItem from "./PageItem/PageItem";
+import PageFAQ from "./PageFAQ/PageFAQ";
+import PageMain from "./PageMain/PageMain";
+import NavBar from "./NavBar/NavBar";
+import { Header } from "./components/header/header";
+import { Footer } from "./components/footer/footer";
 
 const App = () => {
   return (
