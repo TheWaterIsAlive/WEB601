@@ -3,6 +3,7 @@ import { ContentArea } from "../ContentArea/ContentArea";
 import { AddMenuItem } from "../components/addmenuItem/addmenuItem";
 import { Menuitem } from "../components/menuItem/menuitem";
 import { connect } from "react-redux";
+import './PageItem.css';
 
 const mapStateToProps = (state) => {
   return { loggedIn: state.loggedIn };

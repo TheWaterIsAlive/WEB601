@@ -5,6 +5,7 @@ import { AdvanceSearch } from "../components/advanceSearch/advanceSearch";
 import { Menuitem } from "../components/menuItem/menuitem";
 import { SearchArea } from "../SearchArea/SearchArea";
 import { Container, Row, Col } from "react-bootstrap";
+import './PageSearch.css';
 
 const PageSearch = () => {
   return (

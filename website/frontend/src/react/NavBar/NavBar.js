@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Collapse, Navbar, NavbarToggler, Nav, NavItem } from "reactstrap";
+import './NavBar.css';
 
 const NavBar = () => {
   // Standard Navbar from reactstrap page
