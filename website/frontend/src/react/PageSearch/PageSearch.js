@@ -1,9 +1,9 @@
 import React from "react";
 
-import { AdvanceSearch } from "./parts/advanceSearch";
+import { AdvanceSearch } from "../components/advanceSearch/advanceSearch";
 // import {ContentSpace} from './parts/contentSpace'
-import { Menuitem } from "./parts/menuitem";
-import { SearchArea } from "./SearchArea";
+import { Menuitem } from "../components/menuItem/menuitem";
+import { SearchArea } from "../SearchArea/SearchArea";
 import { Container, Row, Col } from "react-bootstrap";
 
 const PageSearch = () => {

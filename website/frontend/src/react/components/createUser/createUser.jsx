@@ -1,5 +1,5 @@
 import React from "react";
-import { LOGIN, SWITCH_LOGIN } from "../../../../redux/constants/action-types";
+import { LOGIN, SWITCH_LOGIN } from "../../../redux/constants/action-types";
 import { Col, Button, Form, FormGroup, Label, Input } from "reactstrap";
 import { connect } from "react-redux";
 

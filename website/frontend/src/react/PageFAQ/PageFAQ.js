@@ -1,5 +1,5 @@
 import React from "react";
-import { FaqPanal } from "./parts/faqPanal";
+import { FaqPanal } from "../components/faqPanal/faqPanal";
 const PageFAQ = () => {
   return (
     <div>
