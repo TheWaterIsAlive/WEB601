@@ -11,25 +11,17 @@ export class AddMenuItem extends React.Component {
     // Sets up the ability to set up there  submint button events
     event.preventDefault();
 
-    const confirmable = window.fetch("http://localhost:4200/api/menuItem/", {
+    const confirmable = window.fetch("http://localhost:3007/menuItem/", {
       // A promise which trys and gets to the database through routes
       method: "post", // The type of action this event preforms
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         // creates a list of string so the infomration can be later displayed
-        menuID: this.menuID.value,
+        id: this.menuID.value,
         itemName: this.itemName.value,
         itemDescription: this.itemDescription.value,
         itemCost: this.itemCost.value,
-        energy: this.energy.value,
-        protein: this.protein.value,
-        fat: this.fat.value,
-        carbohydrates: this.carbohydrates.value,
-        sugar: this.sugar.value,
-        dietaryFibre: this.dietaryFibre.value,
-        sodium: this.sodium.value,
-        allergenCondentions: this.allergenCondentions.value,
-        image: this.image.value,
+        itemImage: this.image.value
       }), // The aboves use this and value as that is what this code is refering too
     });
     confirmable

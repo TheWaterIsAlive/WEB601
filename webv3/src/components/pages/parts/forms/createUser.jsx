@@ -33,7 +33,7 @@ export class CreateUser extends React.Component {
   // The state hold the value of the input feilds in the form so they can be easierly worked with
   // The bind area makes sure that the component knows to uses it's own funtions
 
-  handleClick = () => {
+  handleClick(event) {
     this.props.swicthPanels(this.props.logInPanel);
   };
   // On Click runs the redux statement to switch panels
