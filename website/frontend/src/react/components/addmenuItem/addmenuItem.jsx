@@ -1,5 +1,5 @@
 import React from "react";
-import ConnectedLoginRegistration from "./loginRegistration";
+import ConnectedLoginRegistration from "../loginRegistration/loginRegistration";
 import { Form, Label, Input } from "reactstrap";
 export class AddMenuItem extends React.Component {
   constructor() {

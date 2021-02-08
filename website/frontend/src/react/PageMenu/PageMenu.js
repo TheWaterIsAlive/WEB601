@@ -1,8 +1,8 @@
 import React from "react";
 // import {ContentSpace} from './parts/contentSpace'
-import { ContentArea } from "./ContentArea";
-import { Menuitem } from "./parts/menuitem";
-import { DeleteMenuItem } from "./parts/forms/deleteMenuItem";
+import { ContentArea } from "../ContentArea/ContentArea";
+import { Menuitem } from "../components/menuItem/menuitem";
+import { DeleteMenuItem } from "../components/deleteMenuItem/deleteMenuItem";
 
 const PageMenu = () => {
   return (

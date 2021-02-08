@@ -1,7 +1,7 @@
 import React from "react";
-import { ContentArea } from "./ContentArea.js";
-import { AddMenuItem } from "./parts/forms/addmenuItem";
-import { Menuitem } from "./parts/menuitem";
+import { ContentArea } from "../ContentArea/ContentArea";
+import { AddMenuItem } from "../components/addmenuItem/addmenuItem";
+import { Menuitem } from "../components/menuItem/menuitem";
 import { connect } from "react-redux";
 
 const mapStateToProps = (state) => {

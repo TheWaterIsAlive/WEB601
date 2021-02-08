@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { MenuPanel } from "./menuPanel";
+import { MenuPanel } from "../menuPanel/menuPanel";
 // import { DeleteMenuItem } from './deleteMenuItem';
 
 export class Menuitem extends React.Component {

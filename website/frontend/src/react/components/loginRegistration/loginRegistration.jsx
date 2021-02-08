@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { Col, Button, Form, FormGroup, Label, Input } from "reactstrap";
-import ConnectedCreateUser from "./createUser";
-import { SWITCH_LOGIN, LOGIN } from "../../../../redux/constants/action-types";
-import "./forms.css";
+import ConnectedCreateUser from "../createUser/createUser";
+import { SWITCH_LOGIN, LOGIN } from "../../../redux/constants/action-types";
+// import "./forms.css";
 
 const mapStateToProps = (state) => {
   return { logInPanel: state.logInPanel };
@@ -61,9 +61,9 @@ class loginRegistration extends Component {
     event.preventDefault();
     this.setState({ [event.target.id]: event.target.value });
     // This funtion takes the id of an input feild and compairs it to the name of the states validles and then changes them accordingly.
-  }
+  };
 
-  handleClick = () => {
+  handleClick(event) {
     this.props.swicthPanels(this.props.logInPanel);
   };
 
