@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import './SearchArea.css';
 
 export const SearchArea = (props) => (
   // Has other companents passed into it
