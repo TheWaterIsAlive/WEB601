@@ -1,19 +1,112 @@
 {
-  "posts": [
+  "buisnesses": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "buisnessName": "Food Store",
+      "Address": "1 Street Place"
+    },{
+      "buisnessName": "Snack Shack",
+      "Address": "2 Street Place"
+
     }
   ],
-  "comments": [
+  "users": [
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "userName": "Person",
+      "accountPassword": "Password1",
+      "email": "email@email.com",
+      "buisnessName": "Food Store"
     }
   ],
-  "profile": {
-    "name": "typicode"
+  "menus": [
+    {
+    "menuID": 1,
+    "buisnessName": "Food Store"
+    },
+    {
+      "menuID": 2,
+      "buisnessName": "Snack Shack"
+    }
+  ],
+  "menuDefaults":
+  [
+    {
+      "menuDefaultID": 1,
+      "buisnessName": "Food Store",
+      "energy": 0,
+      "protein": 0,
+      "fat": 0,
+      "carbohydrates": 0,
+      "sugar": 0,
+      "dietaryFibre": 0,
+      "sodium": 0,
+      "vegaterian": false,
+      "vegan": false,
+      "allergenCondentions": true
+  },
+  {
+    "menuDefaultID": 2,
+    "buisnessName": "Snack Shack",
+    "energy": 0,
+    "protein": 0,
+    "fat": 0,
+    "carbohydrates": 0,
+    "sugar": 0,
+    "dietaryFibre": 0,
+    "sodium": 0,
+    "vegaterian": false,
+    "vegan": false,
+    "allergenCondentions": true
+}
+],
+"menuItem":
+[
+  {
+    "itemID": 1,
+    "menuID": 1,
+    "itemName": "Sandwitch",
+    "itemDescription": "Is a sandwitch.",
+    "itemCost": 5,
+    "itemImage": "https://loremflickr.com/160/160"
+  },
+  {
+    "itemID": 2,
+    "menuID": 1,
+    "itemName": "Curry",
+    "itemDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vel pharetra vel turpis nunc. In pellentesque massa placerat duis.",
+    "itemCost": 5,
+    "itemImage": "https://loremflickr.com/160/160"
+  },
+  {
+    "itemID": 3,
+    "menuID": 1,
+    "itemName": "Drink",
+    "itemDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Suscipit tellus mauris a diam maecenas sed enim. Sed risus pretium quam vulputate.",
+    "itemImage": "https://loremflickr.com/160/160"
+  },
+  {
+    "itemID": 4,
+    "menuID": 2,
+    "itemName": "Sandwitch",
+    "itemDescription": "Is a sandwitch.",
+    "itemCost": 5,
+    "itemImage": "https://loremflickr.com/160/160"
+  },
+  {
+    "itemID": 5,
+    "menuID": 2,
+    "itemName": "Curry",
+    "itemDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vel pharetra vel turpis nunc. In pellentesque massa placerat duis.",
+    "itemCost": 5,
+    "itemImage": "https://loremflickr.com/160/160"
+  },
+  {
+    "itemID": 6,
+    "menuID": 2,
+    "itemName": "Drink",
+    "itemDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Suscipit tellus mauris a diam maecenas sed enim. Sed risus pretium quam vulputate.",
+    "itemImage": "https://loremflickr.com/160/160"
   }
+]
+
+
 }
