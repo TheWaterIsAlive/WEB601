@@ -15,25 +15,45 @@ export class Menuitem extends React.Component {
     // this.handleSubmit = this.handleSubmit.bind(this);
   }
 
+  // GetMenuItem() {
+  //   fetch("http://localhost:4200/api/menuItem/")
+  //     .then((res) => res.json())
+  //     .then((data) => {
+  //       if (data.cod === "404") {
+  //         this.setState({
+  //           isFetching: false,
+  //         });
+  //       } else {
+  //         this.setState({
+  //           isFetching: true, // Gets all menu items from the menuItem table and stores them in the items state
+  //           items: data,
+  //         });
+  //       }
+  //     })
+  //     .catch((err) => {
+  //       console.log(err);
+  //     });
+  // }
+
   GetMenuItem() {
-    fetch("http://localhost:4200/api/menuItem/")
-      .then((res) => res.json())
-      .then((data) => {
-        if (data.cod === "404") {
-          this.setState({
-            isFetching: false,
-          });
-        } else {
-          this.setState({
-            isFetching: true, // Gets all menu items from the menuItem table and stores them in the items state
-            items: data,
-          });
-        }
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  }
+      fetch("http://localhost:3007/menuItem")
+        .then((res) => res.json())
+        .then((data) => {
+          if (data.cod === "404") {
+            this.setState({
+              isFetching: false,
+            });
+          } else {
+            this.setState({
+              isFetching: true, // Gets all menu items from the menuItem table and stores them in the items state
+              items: data,
+            });
+          }
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    }
 
   componentDidMount() {
     this.GetMenuItem(); // Get array of items one the comonent is successfully mounted

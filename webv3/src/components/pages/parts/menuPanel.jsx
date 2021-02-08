@@ -17,7 +17,7 @@ export class MenuPanel extends React.Component {
     // event.preventDefault();
 
     // this.selectID();
-    fetch("http://localhost:4200/api/menuItem/" + this.state.thisID, {
+    fetch("http://localhost:3007/menuItem/" + this.state.thisID, {
       method: "DEL",
     }).then((response) =>
       response.json().then((json) => {
@@ -39,7 +39,7 @@ export class MenuPanel extends React.Component {
               <Col xs="6">Item ID:</Col>
               <Col xs="6">{this.props.data.itemID}</Col>
             </Row>
-            {/* <Col>{this.props.data.menuID}</Col> */}
+            <Col>{this.props.data.menuID}</Col>
 
             <Row>
               <Col>{this.props.data.itemName}</Col>
@@ -54,7 +54,7 @@ export class MenuPanel extends React.Component {
     } else {
       return (
         <Container className="menuItem">
-          {/* <Row key={this.props.data.itemID}> */}
+          <Row key={this.props.data.itemID} />
 
           <Row>
             <Col className="menuFoodName">
