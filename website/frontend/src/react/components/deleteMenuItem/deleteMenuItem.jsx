@@ -1,5 +1,6 @@
 import React from "react";
 import { Col, Button, Form, FormGroup, Label, Input } from "reactstrap";
+import './deleteMenuItem.css';
 
 export class DeleteMenuItem extends React.Component {
   constructor() {

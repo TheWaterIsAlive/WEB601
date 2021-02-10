@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import { Slide } from "react-slideshow-image";
+import './slideshow.css';
 
 const slideImages = [
   "https://lh3.googleusercontent.com/B_NUq625isJ64CSTei3uiNJybFkQtrqN7fd0V_KfCNkDxm3I82m4e2S-IA03PnRabHUoo5PyxV5EaHZUT4pgtbFHn1RPzXjiCGsysVquP3fk_X9josdZQRN_pTrBGlecvXYOU4rlCw=w1400",

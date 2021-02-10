@@ -4,6 +4,7 @@ import { Col, Button, Form, FormGroup, Label, Input } from "reactstrap";
 import ConnectedCreateUser from "../createUser/createUser";
 import { SWITCH_LOGIN, LOGIN } from "../../../redux/constants/action-types";
 // import "./forms.css";
+import './loginRegistration.css';
 
 const mapStateToProps = (state) => {
   return { logInPanel: state.logInPanel };
