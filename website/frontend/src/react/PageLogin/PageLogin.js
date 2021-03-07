@@ -1,29 +1,9 @@
 import React from "react";
-import { connect } from "react-redux";
-// import { Col, Button, Form, FormGroup, Label, Input } from "reactstrap";
-import ConnectedCreateUser from "../components/createUser/createUser";
+ import ConnectedCreateUser from "../components/createUser/createUser";
 import SignIn from "../components/signIn/signIn";
-import { SWITCH_LOGIN, LOGIN } from "../../redux/constants/action-types";
 import { Container, Row, Col } from "react-bootstrap";
-// import "./forms.css";
 import './PageLogin.css';
 
-const mapStateToProps = (state) => {
-  return { logInPanel: state.logInPanel };
-};
-// Loads the state of the panel from the redux store
-
-const mapDispatchToProps = (dispatch) => {
-  return {
-    swicthPanels: (newPanel) => {
-      dispatch({ type: SWITCH_LOGIN, payload: newPanel });
-    },
-    loggingIN: (user) => {
-      dispatch({ type: LOGIN, payload: user });
-    },
-  };
-};
-// Loads the reducers from the action class and sets them to funtions.
 
 const PageLogin = () => {
   // constructor(props) {
@@ -70,25 +50,21 @@ const PageLogin = () => {
   //   this.props.swicthPanels(this.props.logInPanel);
   // };
 
-    console.log(this.props);
+   // console.log(this.props);
    // const { logInPanel } = this.props;
 
-
+    return (
     <Container>
       <Row>
         <Col>
  
         <SignIn/>
-        <ConnectedCreateUser/>
+        <ConnectedCreateUser/> 
 
       </Col>
     </Row>
   </Container>
+    )
 }
 
-const ConnectedLoginRegistration = connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(PageLogin);
-
-export default ConnectedLoginRegistration;
+export default PageLogin;

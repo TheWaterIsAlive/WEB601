@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import { Collapse, Navbar, NavbarToggler, Nav, NavItem } from "reactstrap";
+import { Collapse, Navbar, NavbarToggler, Nav} from "reactstrap";
+import NavButton from "./NavButton/NavButton";
 import './NavBar.css';
 
 const NavBar = () => {
@@ -20,32 +20,14 @@ const NavBar = () => {
       <Collapse isOpen={isOpen} navbar>
         {/* Decides which part of the Navbar should be hidden */}
 
+        
         <Nav className="mr-auto" navbar>
-          <NavItem className="navCol">
-            <Link to="/" className="navLink">
-              Home
-            </Link>
-          </NavItem>
-          <NavItem className="navCol">
-            <Link to="/Menu" className="navLink">
-              Menu
-            </Link>
-          </NavItem>
-          <NavItem className="navCol">
-            <Link to="/Search" className="navLink">
-              Search
-            </Link>
-          </NavItem>
-          <NavItem className="navCol">
-            <Link to="/Menu/Item" className="navLink">
-              Item
-            </Link>
-          </NavItem>
-          <NavItem className="navCol">
-            <Link to="/FAQ" className="navLink">
-              FAQ
-            </Link>
-          </NavItem>
+        <NavButton navAddress="/" navText="Home"></NavButton>
+        <NavButton navAddress="/Menu" navText="Menu"></NavButton>
+        <NavButton navAddress="/Search" navText="Search"></NavButton>
+        <NavButton navAddress="/Menu/Item" navText="Item"></NavButton>
+        <NavButton navAddress="/FAQ" navText="FAQ"></NavButton>
+        <NavButton navAddress="/Login" navText="Login"></NavButton>
         </Nav>
       </Collapse>
       {/* End of the hidden narbar area */}

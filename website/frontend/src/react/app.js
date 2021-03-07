@@ -24,7 +24,7 @@ const App = () => {
             <Route path="/Search" exact component={PageSearch} />
             <Route path="/Menu/Item" exact component={connectedPageItem} />
             <Route path="/FAQ" exact component={PageFAQ} />
-            <Route path="Login" exact component={PageLogin} />
+            <Route path="/Login" exact component={PageLogin} />
           </Col>
         </Row>
       </BrowserRouter>
