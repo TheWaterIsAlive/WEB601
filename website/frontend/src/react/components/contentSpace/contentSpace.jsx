@@ -1,7 +1,8 @@
 import React from "react";
 // import {Menuitem} from './menuitem'
 // import {BuisnessDetail} from './buisnessDetails'
-// import {CreateUser} from './createUser'
+// import {CreateUser} from './createUser
+import './contentSpace.css';
 
 import { Container, Row, Col } from "react-bootstrap";
 // import Menuitem from './menuitem';
