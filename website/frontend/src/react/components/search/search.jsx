@@ -1,6 +1,7 @@
 import React from "react";
 import { Col, FormGroup, Label, Input } from "reactstrap";
 import { Container } from "react-bootstrap";
+import './search.css';
 
 export class Search extends React.Component {
   render() {

@@ -59,30 +59,7 @@ h1.headerStyling {
 
 /* ===========================Reactive=============================== */
 
-/* ===========================Nav=============================== */
-.navCol {
-  /* background-color: #212121; */
-  padding: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
-  height: 100%;
-  min-width: 75px;
-}
 
-.navLink {
-  text-decoration: none;
-  color: #bfbfbf;
-  text-align: center;
-}
-
-.navRow {
-  background-color: #6b6b6b;
-  padding: 0%;
-  padding-bottom: 7px;
-  margin: 0%;
-}
-
-/* ===========================Nav=============================== */
 
 /* ===========================Menu Item=============================== */
 

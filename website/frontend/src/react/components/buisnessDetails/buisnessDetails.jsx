@@ -1,4 +1,5 @@
 import React from "react";
+import './buisnessDetails.css';
 
 export class BuisnessDetail extends React.Component {
   render() {

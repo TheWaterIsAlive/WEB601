@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap"; // Import many parts of the same patch at once
 import { Search } from "../search/search";
+import './advanceSearch.css';
 
 export class AdvanceSearch extends React.Component {
   render() {

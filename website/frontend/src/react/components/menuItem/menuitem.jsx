@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { MenuPanel } from "../menuPanel/menuPanel";
 // import { DeleteMenuItem } from './deleteMenuItem';
+import './menuItem.css';
 
 export class Menuitem extends React.Component {
   constructor(props) {

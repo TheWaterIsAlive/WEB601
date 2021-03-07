@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import './menuPanel.css';
 
 export class MenuPanel extends React.Component {
   constructor(props) {

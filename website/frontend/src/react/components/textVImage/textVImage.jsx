@@ -1,4 +1,5 @@
 import React from "react";
+import './textVImage.css';
 
 export const TextVImage = () => {
   return (
